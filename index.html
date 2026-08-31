@@ -1,864 +1,718 @@
-```html
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
-
     <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-    <meta name="viewport"
-          content="width=device-width, initial-scale=1.0">
+    <title>MSc Cybersecurity E-Portfolio</title>
 
-    <meta name="description"
-          content="Abinel Madzivire - MSc Cybersecurity e-Portfolio">
-
-    <title>Abinel Madzivire | MSc Cybersecurity e-Portfolio</title>
+    <meta
+        name="description"
+        content="Professional MSc Cybersecurity e-portfolio showcasing academic learning, practical artefacts, reflection, skills and professional development."
+    >
 
     <link rel="stylesheet" href="css/style.css">
-
 </head>
-
 
 <body>
 
+    <!-- =========================================
+         HEADER / NAVIGATION
+    ========================================== -->
 
-<!-- =====================================================
-     NAVIGATION
-     ===================================================== -->
+    <header class="site-header">
 
-<header>
+        <div class="nav-container">
 
-    <nav class="navbar">
+            <a href="index.html" class="brand">
 
-        <div class="container nav-container">
+                <div class="brand-icon">
+                    🔐
+                </div>
 
-            <a href="index.html" class="logo">
-                AM<span>.</span>
+                <div class="brand-text">
+                    <span class="brand-main">
+                        MSc <strong>CYBERSECURITY</strong>
+                    </span>
+
+                    <span class="brand-subtitle">
+                        E-PORTFOLIO
+                    </span>
+                </div>
+
             </a>
 
+            <nav class="main-nav">
 
-            <ul class="nav-links">
-
-                <li>
-                    <a href="index.html" class="active">
-                        Home
-                    </a>
-                </li>
-
-                <li>
-                    <a href="about.html">
-                        About Me
-                    </a>
-                </li>
-
-                <li>
-                    <a href="#modules">
-                        Modules
-                    </a>
-                </li>
-
-                <li>
-                    <a href="#skills">
-                        Skills
-                    </a>
-                </li>
-
-                <li>
-                    <a href="#research">
-                        Research
-                    </a>
-                </li>
-
-                <li>
-                    <a href="#contact">
-                        Contact
-                    </a>
-                </li>
-
-            </ul>
-
-        </div>
-
-    </nav>
-
-</header>
-
-
-
-<!-- =====================================================
-     HERO SECTION
-     ===================================================== -->
-
-<main>
-
-<section class="hero">
-
-    <div class="container hero-content">
-
-        <div class="hero-text">
-
-            <p class="eyebrow">
-                MSc CYBERSECURITY • UNIVERSITY OF ESSEX
-            </p>
-
-
-            <h1>
-                Cybersecurity,
-                <span>Research</span>
-                & Professional Development
-            </h1>
-
-
-            <p class="hero-description">
-
-                Welcome to my MSc Cybersecurity e-Portfolio.
-
-                This portfolio documents my academic journey,
-                practical development, professional skills,
-                cybersecurity projects and research interests
-                throughout my postgraduate studies.
-
-            </p>
-
-
-            <div class="hero-buttons">
-
-                <a href="#modules"
-                   class="btn btn-primary">
-
-                    Explore My Modules
-
+                <a href="index.html" class="active">
+                    Home
                 </a>
 
-
-                <a href="about.html"
-                   class="btn btn-secondary">
-
+                <a href="about.html">
                     About Me
-
                 </a>
 
+                <a href="#modules">
+                    Modules
+                </a>
+
+                <a href="#projects">
+                    Projects
+                </a>
+
+                <a href="#skills">
+                    Skills
+                </a>
+
+                <a href="#development">
+                    Professional Development
+                </a>
+
+                <a href="#contact">
+                    Contact
+                </a>
+
+            </nav>
+
+        </div>
+
+    </header>
+
+
+    <!-- =========================================
+         HERO SECTION
+    ========================================== -->
+
+    <main>
+
+        <section class="hero">
+
+            <div class="hero-overlay"></div>
+
+            <div class="hero-container">
+
+                <!-- LEFT SIDE -->
+
+                <div class="hero-content">
+
+                    <p class="hero-eyebrow">
+                        Welcome to My
+                    </p>
+
+                    <h1>
+                        MSc Cybersecurity
+                        <span>E-Portfolio</span>
+                    </h1>
+
+                    <div class="hero-line"></div>
+
+                    <p class="hero-description">
+                        A reflective record of my academic journey, practical
+                        cybersecurity projects, technical skills and professional
+                        development throughout my MSc Cybersecurity studies.
+                    </p>
+
+                    <div class="hero-buttons">
+
+                        <a href="#modules" class="btn btn-primary">
+                            Explore My Modules →
+                        </a>
+
+                        <a href="about.html" class="btn btn-secondary">
+                            About Me
+                        </a>
+
+                    </div>
+
+                </div>
+
+
+                <!-- CENTRE VISUAL -->
+
+                <div class="hero-visual">
+
+                    <div class="cyber-circle">
+
+                        <div class="shield">
+                            🛡️
+                        </div>
+
+                        <div class="lock">
+                            🔒
+                        </div>
+
+                    </div>
+
+                </div>
+
+
+                <!-- QUOTE CARD -->
+
+                <aside class="quote-card">
+
+                    <div class="quote-mark">
+                        “
+                    </div>
+
+                    <p>
+                        Cybersecurity is not only a technical challenge;
+                        it is a commitment to protecting people, data,
+                        systems and trust in an increasingly digital world.
+                    </p>
+
+                    <div class="quote-divider"></div>
+
+                    <strong>
+                        MSc Cybersecurity Student
+                    </strong>
+
+                    <span>
+                        University of Essex
+                    </span>
+
+                </aside>
+
             </div>
 
-        </div>
+        </section>
 
 
-        <div class="hero-card">
+        <!-- =========================================
+             MODULES
+        ========================================== -->
 
-            <div class="profile-icon">
-                AM
+        <section class="modules-section" id="modules">
+
+            <div class="section-heading">
+
+                <p class="section-label">
+                    Academic Journey
+                </p>
+
+                <h2>
+                    My MSc Cybersecurity Modules
+                </h2>
+
+                <p>
+                    Explore my learning outcomes, artefacts, feedback,
+                    reflections and professional development evidence
+                    across each module.
+                </p>
+
             </div>
 
 
-            <h2>
-                Abinel Madzivire
-            </h2>
+            <div class="module-grid">
 
 
-            <p>
-                MSc Cybersecurity Student
-            </p>
+                <!-- MODULE 1 -->
+
+                <article class="module-card">
+
+                    <div class="card-top">
+
+                        <div class="module-icon">
+                            💻
+                        </div>
+
+                        <span class="status completed">
+                            ✓ Completed
+                        </span>
+
+                    </div>
+
+                    <span class="module-number">
+                        MODULE 1
+                    </span>
+
+                    <h3>
+                        Launch into Computing
+                    </h3>
+
+                    <p>
+                        Foundations of computing, programming,
+                        problem-solving, data handling and digital literacy.
+                    </p>
+
+                    <a
+                        href="modules/launch-into-computing.html"
+                        class="module-link"
+                    >
+                        View Module →
+                    </a>
+
+                </article>
 
 
-            <div class="hero-line"></div>
+                <!-- MODULE 2 -->
+
+                <article class="module-card">
+
+                    <div class="card-top">
+
+                        <div class="module-icon">
+                            🌐
+                        </div>
+
+                        <span class="status completed">
+                            ✓ Completed
+                        </span>
+
+                    </div>
+
+                    <span class="module-number">
+                        MODULE 2
+                    </span>
+
+                    <h3>
+                        Network Security
+                    </h3>
+
+                    <p>
+                        Network architecture, vulnerabilities,
+                        cyber defence, penetration testing and security controls.
+                    </p>
+
+                    <a
+                        href="modules/network-security.html"
+                        class="module-link"
+                    >
+                        View Module →
+                    </a>
+
+                </article>
 
 
-            <ul>
+                <!-- MODULE 3 -->
 
-                <li>
-                    Cybersecurity
-                </li>
+                <article class="module-card">
 
-                <li>
-                    Network Security
-                </li>
+                    <div class="card-top">
 
-                <li>
-                    Risk Management
-                </li>
+                        <div class="module-icon">
+                            🛡️
+                        </div>
 
-                <li>
-                    Digital Forensics
-                </li>
+                        <span class="status in-progress">
+                            ◉ In Progress
+                        </span>
 
-                <li>
-                    Cybersecurity Research
-                </li>
+                    </div>
 
-            </ul>
+                    <span class="module-number">
+                        MODULE 3
+                    </span>
 
-        </div>
+                    <h3>
+                        Security and Risk Management
+                    </h3>
 
-    </div>
+                    <p>
+                        Cybersecurity risk assessment, governance,
+                        threat modelling, frameworks and organisational resilience.
+                    </p>
 
-</section>
+                    <a
+                        href="modules/security-and-risk-management.html"
+                        class="module-link"
+                    >
+                        View Module →
+                    </a>
 
-
-
-<!-- =====================================================
-     INTRODUCTION
-     ===================================================== -->
-
-<section class="section">
-
-    <div class="container">
-
-        <div class="section-heading">
-
-            <p class="eyebrow">
-                WELCOME
-            </p>
-
-            <h2>
-                My MSc Cybersecurity Journey
-            </h2>
-
-        </div>
+                </article>
 
 
-        <div class="two-column">
+                <!-- MODULE 4 -->
+
+                <article class="module-card">
+
+                    <div class="card-top">
+
+                        <div class="module-icon">
+                            &lt;/&gt;
+                        </div>
+
+                        <span class="status upcoming">
+                            ◷ Upcoming
+                        </span>
+
+                    </div>
+
+                    <span class="module-number">
+                        MODULE 4
+                    </span>
+
+                    <h3>
+                        Advanced Object-Oriented Design and Programming
+                    </h3>
+
+                    <p>
+                        Advanced programming, secure software design,
+                        object-oriented principles and software architecture.
+                    </p>
+
+                    <a
+                        href="modules/module4.html"
+                        class="module-link"
+                    >
+                        View Module →
+                    </a>
+
+                </article>
+
+
+                <!-- MODULE 5 -->
+
+                <article class="module-card">
+
+                    <div class="card-top">
+
+                        <div class="module-icon">
+                            🔍
+                        </div>
+
+                        <span class="status upcoming">
+                            ◷ Upcoming
+                        </span>
+
+                    </div>
+
+                    <span class="module-number">
+                        MODULE 5
+                    </span>
+
+                    <h3>
+                        Digital Forensics
+                    </h3>
+
+                    <p>
+                        Digital evidence, forensic investigation,
+                        incident analysis and preservation of electronic artefacts.
+                    </p>
+
+                    <a
+                        href="modules/module5.html"
+                        class="module-link"
+                    >
+                        View Module →
+                    </a>
+
+                </article>
+
+
+                <!-- MODULE 6 -->
+
+                <article class="module-card">
+
+                    <div class="card-top">
+
+                        <div class="module-icon">
+                            ☁️
+                        </div>
+
+                        <span class="status upcoming">
+                            ◷ Upcoming
+                        </span>
+
+                    </div>
+
+                    <span class="module-number">
+                        MODULE 6
+                    </span>
+
+                    <h3>
+                        Cloud Operations and Management
+                    </h3>
+
+                    <p>
+                        Cloud architecture, operations, security,
+                        service management and distributed computing environments.
+                    </p>
+
+                    <a
+                        href="modules/module6.html"
+                        class="module-link"
+                    >
+                        View Module →
+                    </a>
+
+                </article>
+
+
+                <!-- MODULE 7 -->
+
+                <article class="module-card">
+
+                    <div class="card-top">
+
+                        <div class="module-icon">
+                            📚
+                        </div>
+
+                        <span class="status upcoming">
+                            ◷ Upcoming
+                        </span>
+
+                    </div>
+
+                    <span class="module-number">
+                        MODULE 7
+                    </span>
+
+                    <h3>
+                        Research Methods and Professional Practice
+                    </h3>
+
+                    <p>
+                        Research design, academic enquiry, ethics,
+                        critical evaluation and professional development.
+                    </p>
+
+                    <a
+                        href="modules/module7.html"
+                        class="module-link"
+                    >
+                        View Module →
+                    </a>
+
+                </article>
+
+
+                <!-- MODULE 8 -->
+
+                <article class="module-card">
+
+                    <div class="card-top">
+
+                        <div class="module-icon">
+                            🎓
+                        </div>
+
+                        <span class="status upcoming">
+                            ◷ Upcoming
+                        </span>
+
+                    </div>
+
+                    <span class="module-number">
+                        MODULE 8
+                    </span>
+
+                    <h3>
+                        MSc Cybersecurity Project
+                    </h3>
+
+                    <p>
+                        Independent postgraduate research applying
+                        cybersecurity knowledge, analytical methods and professional practice.
+                    </p>
+
+                    <a
+                        href="modules/module8.html"
+                        class="module-link"
+                    >
+                        View Module →
+                    </a>
+
+                </article>
+
+            </div>
+
+        </section>
+
+
+        <!-- =========================================
+             PROFESSIONAL PROFILE
+        ========================================== -->
+
+        <section class="profile-strip" id="skills">
+
+            <div class="profile-item">
+
+                <div class="profile-icon">
+                    🎓
+                </div>
+
+                <div>
+                    <h3>Academic Development</h3>
+                    <p>
+                        Postgraduate cybersecurity learning and critical reflection.
+                    </p>
+                </div>
+
+            </div>
+
+
+            <div class="profile-item">
+
+                <div class="profile-icon">
+                    🎯
+                </div>
+
+                <div>
+                    <h3>Practical Learning</h3>
+                    <p>
+                        Technical activities, artefacts and applied cybersecurity work.
+                    </p>
+                </div>
+
+            </div>
+
+
+            <div class="profile-item">
+
+                <div class="profile-icon">
+                    🔐
+                </div>
+
+                <div>
+                    <h3>Cybersecurity Practice</h3>
+                    <p>
+                        Protecting systems, networks, information and digital services.
+                    </p>
+                </div>
+
+            </div>
+
+
+            <div class="profile-item">
+
+                <div class="profile-icon">
+                    📈
+                </div>
+
+                <div>
+                    <h3>Professional Growth</h3>
+                    <p>
+                        Continuous skills development and reflective professional practice.
+                    </p>
+                </div>
+
+            </div>
+
+        </section>
+
+
+        <!-- =========================================
+             PROJECTS / DEVELOPMENT
+        ========================================== -->
+
+        <section class="development-section" id="development">
+
+            <div class="section-heading">
+
+                <p class="section-label">
+                    Professional Development
+                </p>
+
+                <h2>
+                    Building Cybersecurity Knowledge Through Practice
+                </h2>
+
+                <p>
+                    My e-portfolio brings together academic theory,
+                    technical exercises, reflective practice and professional
+                    development to demonstrate my progression as a cybersecurity practitioner.
+                </p>
+
+            </div>
+
+            <div class="development-grid">
+
+                <div class="development-card">
+
+                    <h3>
+                        Technical Artefacts
+                    </h3>
+
+                    <p>
+                        Practical exercises, technical analysis,
+                        cybersecurity tools and evidence of applied learning.
+                    </p>
+
+                </div>
+
+                <div class="development-card">
+
+                    <h3>
+                        Reflection
+                    </h3>
+
+                    <p>
+                        Critical reflection on learning, feedback,
+                        challenges, achievements and future development.
+                    </p>
+
+                </div>
+
+                <div class="development-card">
+
+                    <h3>
+                        Professional Skills
+                    </h3>
+
+                    <p>
+                        Development of technical, analytical,
+                        communication, research and cybersecurity skills.
+                    </p>
+
+                </div>
+
+            </div>
+
+        </section>
+
+    </main>
+
+
+    <!-- =========================================
+         FOOTER
+    ========================================== -->
+
+    <footer class="site-footer" id="contact">
+
+        <div class="footer-container">
 
             <div>
 
-                <p>
-                    I am undertaking an MSc in Cybersecurity at the
-                    University of Essex, developing advanced knowledge
-                    and practical skills across cybersecurity,
-                    networking, risk management, programming, digital
-                    forensics, cloud technologies and research.
-                </p>
-
+                <h3>
+                    MSc Cybersecurity E-Portfolio
+                </h3>
 
                 <p>
-                    This e-portfolio provides a structured record of my
-                    learning and professional development. It contains
-                    evidence of my academic work, reflections,
-                    feedback, meeting notes, skills development and
-                    action plans.
-                </p>
-
-
-                <p>
-                    My aim is to connect academic cybersecurity
-                    knowledge with practical professional challenges,
-                    particularly those involving telecommunications
-                    infrastructure and network security.
+                    Academic learning • Practical development • Reflective practice
                 </p>
 
             </div>
 
 
-            <div class="highlight-box">
+            <div class="footer-links">
 
-                <h3>
-                    Portfolio Purpose
-                </h3>
+                <a href="index.html">
+                    Home
+                </a>
 
-                <p>
-                    This portfolio demonstrates my progression
-                    throughout the MSc and provides evidence of how my
-                    academic learning is contributing to my
-                    professional cybersecurity development.
-                </p>
+                <a href="about.html">
+                    About
+                </a>
 
-
-                <a href="about.html"
-                   class="text-link">
-
-                    Read About Me →
-
+                <a href="#modules">
+                    Modules
                 </a>
 
             </div>
 
         </div>
 
-    </div>
-
-</section>
-
-
-
-<!-- =====================================================
-     MODULES
-     ===================================================== -->
-
-<section class="modules-section">
-    <div class="section-heading">
-        <h2>MSc Cybersecurity Modules</h2>
-        <p>
-            A structured record of my academic development, practical work,
-            feedback, reflection and professional growth throughout the MSc Cybersecurity programme.
-        </p>
-    </div>
-
-    <div class="module-grid">
-
-        <article class="module-card">
-            <span class="module-number">Module 1</span>
-            <span class="status completed">Completed</span>
-
-            <h3>Launch into Computing</h3>
+        <div class="footer-bottom">
 
             <p>
-                Foundations of computing, programming, data structures,
-                problem-solving and professional digital practice.
-            </p>
-
-            <a href="modules/launch-into-computing.html" class="module-button">
-                View Module →
-            </a>
-        </article>
-
-        <article class="module-card">
-            <span class="module-number">Module 2</span>
-            <span class="status completed">Completed</span>
-
-            <h3>Network Security</h3>
-
-            <p>
-                Exploration of network architecture, vulnerabilities,
-                penetration testing, security controls and cyber defence.
-            </p>
-
-            <a href="modules/network-security.html" class="module-button">
-                View Module →
-            </a>
-        </article>
-
-        <article class="module-card">
-            <span class="module-number">Module 3</span>
-            <span class="status in-progress">In Progress</span>
-
-            <h3>Security and Risk Management</h3>
-
-            <p>
-                Examination of cybersecurity risk, threat modelling,
-                governance, security frameworks and organisational resilience.
-            </p>
-
-            <a href="modules/security-and-risk-management.html" class="module-button">
-                View Module →
-            </a>
-        </article>
-
-        <article class="module-card">
-            <span class="module-number">Module 4</span>
-            <span class="status upcoming">Upcoming</span>
-
-            <h3>Advanced Object-Oriented Design and Programming</h3>
-
-            <p>
-                Advanced programming concepts, object-oriented design,
-                software architecture and secure application development.
-            </p>
-
-            <a href="modules/module4.html" class="module-button">
-                View Module →
-            </a>
-        </article>
-
-        <article class="module-card">
-            <span class="module-number">Module 5</span>
-            <span class="status upcoming">Upcoming</span>
-
-            <h3>Digital Forensics</h3>
-
-            <p>
-                Investigation of digital evidence, forensic methodologies,
-                incident analysis and preservation of electronic artefacts.
-            </p>
-
-            <a href="modules/module5.html" class="module-button">
-                View Module →
-            </a>
-        </article>
-
-        <article class="module-card">
-            <span class="module-number">Module 6</span>
-            <span class="status upcoming">Upcoming</span>
-
-            <h3>Cloud Operations and Management</h3>
-
-            <p>
-                Cloud architecture, security, operations, service management
-                and the protection of distributed computing environments.
-            </p>
-
-            <a href="modules/module6.html" class="module-button">
-                View Module →
-            </a>
-        </article>
-
-        <article class="module-card">
-            <span class="module-number">Module 7</span>
-            <span class="status upcoming">Upcoming</span>
-
-            <h3>Research Methods and Professional Practice</h3>
-
-            <p>
-                Research design, ethics, academic enquiry, professional practice
-                and preparation for postgraduate cybersecurity research.
-            </p>
-
-            <a href="modules/module7.html" class="module-button">
-                View Module →
-            </a>
-        </article>
-
-        <article class="module-card">
-            <span class="module-number">Module 8</span>
-            <span class="status upcoming">Upcoming</span>
-
-            <h3>MSc Cybersecurity Project</h3>
-
-            <p>
-                Independent postgraduate research applying cybersecurity theory,
-                research methods and technical investigation to a substantial project.
-            </p>
-
-            <a href="modules/module8.html" class="module-button">
-                View Module →
-            </a>
-        </article>
-
-    </div>
-</section>
-
-
-<!-- =====================================================
-     SKILLS
-     ===================================================== -->
-
-<section id="skills"
-         class="section">
-
-    <div class="container">
-
-        <div class="section-heading">
-
-            <p class="eyebrow">
-                PROFESSIONAL DEVELOPMENT
-            </p>
-
-
-            <h2>
-                Cybersecurity Skills
-            </h2>
-
-        </div>
-
-
-        <div class="skills-grid">
-
-
-            <div class="skill-item">
-
-                <span>
-                    01
-                </span>
-
-                <h3>
-                    Network Security
-                </h3>
-
-                <p>
-                    Network analysis, scanning, vulnerabilities and
-                    defensive security.
-                </p>
-
-            </div>
-
-
-            <div class="skill-item">
-
-                <span>
-                    02
-                </span>
-
-                <h3>
-                    Risk Management
-                </h3>
-
-                <p>
-                    Risk identification, assessment, mitigation and
-                    security governance.
-                </p>
-
-            </div>
-
-
-            <div class="skill-item">
-
-                <span>
-                    03
-                </span>
-
-                <h3>
-                    Threat Modelling
-                </h3>
-
-                <p>
-                    Analysing assets, threats, vulnerabilities and
-                    attack pathways.
-                </p>
-
-            </div>
-
-
-            <div class="skill-item">
-
-                <span>
-                    04
-                </span>
-
-                <h3>
-                    Cybersecurity Tools
-                </h3>
-
-                <p>
-                    Developing practical experience with security
-                    assessment and analysis tools.
-                </p>
-
-            </div>
-
-
-            <div class="skill-item">
-
-                <span>
-                    05
-                </span>
-
-                <h3>
-                    Research
-                </h3>
-
-                <p>
-                    Academic research, literature analysis and
-                    evidence-based cybersecurity investigation.
-                </p>
-
-            </div>
-
-
-            <div class="skill-item">
-
-                <span>
-                    06
-                </span>
-
-                <h3>
-                    Professional Practice
-                </h3>
-
-                <p>
-                    Communication, critical thinking, teamwork and
-                    professional cybersecurity development.
-                </p>
-
-            </div>
-
-
-        </div>
-
-    </div>
-
-</section>
-
-
-
-<!-- =====================================================
-     RESEARCH
-     ===================================================== -->
-
-<section id="research"
-         class="section section-light">
-
-    <div class="container">
-
-        <div class="section-heading">
-
-            <p class="eyebrow">
-                RESEARCH INTERESTS
-            </p>
-
-
-            <h2>
-                Cybersecurity Research
-            </h2>
-
-        </div>
-
-
-        <div class="research-card">
-
-            <div>
-
-                <p class="module-label">
-                    CURRENT RESEARCH INTEREST
-                </p>
-
-
-                <h3>
-                    Last-Mile Network Security
-                </h3>
-
-            </div>
-
-
-            <p>
-                My developing research interests include the security
-                of telecommunications infrastructure and last-mile
-                networks, with particular interest in the security
-                challenges associated with fibre-to-the-premises
-                environments.
-            </p>
-
-
-            <p>
-                I am interested in exploring how technical controls,
-                human factors, network architecture, governance and
-                risk management can contribute to improving security
-                across last-mile environments.
-            </p>
-
-
-            <a href="#contact"
-               class="text-link">
-
-                Discuss My Research →
-
-            </a>
-
-        </div>
-
-    </div>
-
-</section>
-
-
-
-<!-- =====================================================
-     PROJECTS
-     ===================================================== -->
-
-<section id="projects"
-         class="section">
-
-    <div class="container">
-
-        <div class="section-heading">
-
-            <p class="eyebrow">
-                PRACTICAL DEVELOPMENT
-            </p>
-
-
-            <h2>
-                Projects & Technical Work
-            </h2>
-
-
-            <p>
-                This section will contain selected practical
-                cybersecurity activities, technical exercises and
-                independent projects developed throughout the MSc.
+                MSc Cybersecurity E-Portfolio
             </p>
 
         </div>
 
-
-        <div class="project-grid">
-
-
-            <article class="project-card">
-
-                <span>
-                    PROJECT 01
-                </span>
-
-
-                <h3>
-                    Network Security Analysis
-                </h3>
-
-
-                <p>
-                    Practical exploration of network security concepts,
-                    vulnerabilities and defensive controls.
-                </p>
-
-
-                <a href="modules/network-security.html"
-                   class="text-link">
-
-                    View Evidence →
-
-                </a>
-
-            </article>
-
-
-            <article class="project-card">
-
-                <span>
-                    PROJECT 02
-                </span>
-
-
-                <h3>
-                    Threat Modelling
-                </h3>
-
-
-                <p>
-                    Analysis of threats and security risks affecting
-                    complex systems and cyber-physical environments.
-                </p>
-
-
-                <a href="modules/security-and-risk-management.html"
-                   class="text-link">
-
-                    View Evidence →
-
-                </a>
-
-            </article>
-
-
-            <article class="project-card">
-
-                <span>
-                    PROJECT 03
-                </span>
-
-
-                <h3>
-                    MSc Cybersecurity Project
-                </h3>
-
-
-                <p>
-                    Independent research and dissertation project
-                    developed during the final stage of the MSc.
-                </p>
-
-
-                <a href="modules/msc-cybersecurity-project.html"
-                   class="text-link">
-
-                    View Project →
-
-                </a>
-
-            </article>
-
-
-        </div>
-
-    </div>
-
-</section>
-
-
-
-<!-- =====================================================
-     CONTACT
-     ===================================================== -->
-
-<section id="contact"
-         class="cta">
-
-    <div class="container">
-
-        <p class="eyebrow">
-            MSc CYBERSECURITY
-        </p>
-
-
-        <h2>
-            Building knowledge.
-            Developing skills.
-            Securing the future.
-        </h2>
-
-
-        <p>
-            Thank you for visiting my MSc Cybersecurity
-            e-Portfolio. This portfolio will continue to develop as
-            I progress through my studies and professional
-            cybersecurity journey.
-        </p>
-
-
-        <div class="cta-buttons">
-
-            <a href="about.html"
-               class="btn btn-primary">
-
-                About Me
-
-            </a>
-
-
-            <a href="#modules"
-               class="btn btn-secondary">
-
-                Explore Modules
-
-            </a>
-
-        </div>
-
-    </div>
-
-</section>
-
-
-</main>
-
-
-
-<!-- =====================================================
-     FOOTER
-     ===================================================== -->
-
-<footer>
-
-    <div class="container footer-content">
-
-        <div>
-
-            <strong>
-                Abinel Madzivire
-            </strong>
-
-            <p>
-                MSc Cybersecurity e-Portfolio
-            </p>
-
-        </div>
-
-
-        <div>
-
-            <p>
-                University of Essex
-            </p>
-
-            <p>
-                © 2026 Abinel Madzivire</p>
-
-        </div>
-
-    </div>
-
-</footer>
-
+    </footer>
 
 </body>
-
 </html>
-```
