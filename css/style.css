@@ -2025,3 +2025,167 @@ a {
     }
 
 }
+
+/* =========================================
+   MODULE 2 ENHANCEMENTS
+========================================= */
+
+.findings-grid {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 20px;
+}
+
+.finding-card {
+    background: white;
+    border: 1px solid #dce6ef;
+    border-radius: 12px;
+    padding: 25px;
+    box-shadow: 0 5px 15px rgba(35, 70, 100, 0.06);
+}
+
+.finding-card h3 {
+    color: #153f66;
+    margin: 12px 0 9px;
+}
+
+.finding-card p {
+    margin: 0;
+}
+
+.finding-severity {
+    display: inline-block;
+    padding: 5px 10px;
+    border-radius: 14px;
+    font-size: 0.65rem;
+    font-weight: 800;
+    letter-spacing: 0.7px;
+}
+
+.finding-severity.high {
+    background: #ffe7e7;
+    color: #ad2525;
+}
+
+.finding-severity.medium {
+    background: #fff3d7;
+    color: #9b6812;
+}
+
+.finding-severity.low {
+    background: #e7f4ff;
+    color: #176fab;
+}
+
+
+/* METHODOLOGY FLOW */
+
+.methodology-flow {
+    margin-top: 32px;
+    display: flex;
+    align-items: stretch;
+    gap: 10px;
+}
+
+.method-step {
+    flex: 1;
+    background: #f5f9fc;
+    border: 1px solid #dce6ef;
+    border-radius: 10px;
+    padding: 20px;
+    text-align: center;
+}
+
+.method-step span {
+    width: 36px;
+    height: 36px;
+    margin: 0 auto 12px;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    border-radius: 50%;
+
+    background: #147bd3;
+    color: white;
+
+    font-weight: 800;
+}
+
+.method-step strong {
+    display: block;
+    color: #153f66;
+    margin-bottom: 8px;
+}
+
+.method-step p {
+    font-size: 0.84rem;
+    line-height: 1.5;
+    margin: 0;
+}
+
+.method-arrow {
+    align-self: center;
+    color: #2e8cda;
+    font-size: 1.4rem;
+    font-weight: 800;
+}
+
+
+/* PROFESSIONAL SKILLS */
+
+.professional-skill-grid {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 18px;
+}
+
+.professional-skill-card {
+    display: flex;
+    gap: 17px;
+    padding: 21px;
+
+    background: #f7fafc;
+    border: 1px solid #dce6ef;
+    border-radius: 10px;
+}
+
+.professional-skill-card > span {
+    font-size: 1.7rem;
+}
+
+.professional-skill-card h3 {
+    color: #153f66;
+    margin-bottom: 6px;
+}
+
+.professional-skill-card p {
+    margin: 0;
+    font-size: 0.9rem;
+}
+
+
+/* RESPONSIVE */
+
+@media (max-width: 900px) {
+
+    .methodology-flow {
+        flex-direction: column;
+    }
+
+    .method-arrow {
+        transform: rotate(90deg);
+        margin: -3px auto;
+    }
+
+}
+
+@media (max-width: 700px) {
+
+    .findings-grid,
+    .professional-skill-grid {
+        grid-template-columns: 1fr;
+    }
+
+}
