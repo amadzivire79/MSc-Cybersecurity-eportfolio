@@ -2189,3 +2189,155 @@ a {
     }
 
 }
+
+/* =========================================
+   MODULE 3 - SECURITY & RISK MANAGEMENT
+========================================= */
+
+.risk-process {
+    margin-top: 30px;
+
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+
+    gap: 14px;
+}
+
+.risk-step {
+    background: white;
+
+    border: 1px solid #dce6ef;
+
+    border-radius: 11px;
+
+    padding: 20px;
+
+    text-align: center;
+
+    box-shadow: 0 5px 15px rgba(30, 65, 100, 0.05);
+}
+
+.risk-step span {
+    width: 40px;
+    height: 40px;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    margin: 0 auto 14px;
+
+    border-radius: 50%;
+
+    background: #147bd3;
+
+    color: white;
+
+    font-size: 0.74rem;
+    font-weight: 800;
+}
+
+.risk-step h3 {
+    color: #163f65;
+
+    font-size: 1rem;
+
+    margin-bottom: 8px;
+}
+
+.risk-step p {
+    font-size: 0.84rem;
+
+    line-height: 1.55;
+
+    margin: 0;
+}
+
+
+/* GOVERNANCE FRAMEWORKS */
+
+.framework-grid {
+    display: grid;
+
+    grid-template-columns: repeat(3, 1fr);
+
+    gap: 20px;
+}
+
+.framework-card {
+    background: white;
+
+    border: 1px solid #dce6ef;
+
+    border-radius: 12px;
+
+    padding: 27px;
+
+    box-shadow: 0 5px 17px rgba(35, 70, 100, 0.06);
+}
+
+.framework-card h3 {
+    color: #123f68;
+
+    margin-bottom: 12px;
+}
+
+.framework-card p {
+    margin-bottom: 16px;
+}
+
+.framework-functions {
+    display: flex;
+
+    flex-wrap: wrap;
+
+    gap: 7px;
+}
+
+.framework-functions span {
+    background: #e8f4ff;
+
+    color: #1675bd;
+
+    padding: 5px 8px;
+
+    border-radius: 12px;
+
+    font-size: 0.68rem;
+
+    font-weight: 800;
+}
+
+
+/* IN-PROGRESS STATUS */
+
+.status.in-progress {
+    background: #fff1d6;
+
+    color: #956313;
+
+    border: 1px solid #f2d69b;
+}
+
+
+/* RESPONSIVE */
+
+@media (max-width: 1050px) {
+
+    .risk-process {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    .framework-grid {
+        grid-template-columns: 1fr;
+    }
+
+}
+
+@media (max-width: 650px) {
+
+    .risk-process {
+        grid-template-columns: 1fr;
+    }
+
+}
