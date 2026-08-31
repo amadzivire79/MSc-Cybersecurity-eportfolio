@@ -1173,4 +1173,134 @@ css
 
 }
 ```
+/* =========================
+   MODULE SECTION
+========================= */
 
+.modules-section {
+    padding: 70px 8%;
+    background: #f5f7fa;
+}
+
+.section-heading {
+    max-width: 800px;
+    margin: 0 auto 45px;
+    text-align: center;
+}
+
+.section-heading h2 {
+    font-size: 2.2rem;
+    margin-bottom: 15px;
+    color: #102a43;
+}
+
+.section-heading p {
+    color: #5c677d;
+    line-height: 1.7;
+}
+
+.module-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+    gap: 25px;
+}
+
+.module-card {
+    background: #ffffff;
+    border-radius: 14px;
+    padding: 28px;
+    position: relative;
+    border: 1px solid #e5e7eb;
+    box-shadow: 0 6px 18px rgba(0, 0, 0, 0.06);
+    transition: transform 0.25s ease, box-shadow 0.25s ease;
+    display: flex;
+    flex-direction: column;
+    min-height: 320px;
+}
+
+.module-card:hover {
+    transform: translateY(-6px);
+    box-shadow: 0 12px 28px rgba(0, 0, 0, 0.12);
+}
+
+.module-number {
+    font-size: 0.8rem;
+    font-weight: 700;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    color: #486581;
+    margin-bottom: 15px;
+}
+
+.module-card h3 {
+    font-size: 1.35rem;
+    color: #102a43;
+    margin: 12px 0;
+    line-height: 1.35;
+}
+
+.module-card p {
+    color: #627d98;
+    line-height: 1.65;
+    margin-bottom: 24px;
+}
+
+.status {
+    display: inline-block;
+    align-self: flex-start;
+    padding: 6px 12px;
+    border-radius: 20px;
+    font-size: 0.78rem;
+    font-weight: 700;
+    margin-bottom: 8px;
+}
+
+.status.completed {
+    background: #e8f5e9;
+    color: #256029;
+}
+
+.status.in-progress {
+    background: #fff3cd;
+    color: #856404;
+}
+
+.status.upcoming {
+    background: #e9ecef;
+    color: #495057;
+}
+
+.module-button {
+    margin-top: auto;
+    display: inline-block;
+    text-decoration: none;
+    font-weight: 700;
+    color: #ffffff;
+    background: #123a63;
+    padding: 11px 18px;
+    border-radius: 8px;
+    transition: background 0.25s ease, transform 0.25s ease;
+    width: fit-content;
+}
+
+.module-button:hover {
+    background: #0b2745;
+    transform: translateX(3px);
+}
+
+/* Mobile responsiveness */
+
+@media (max-width: 768px) {
+
+    .modules-section {
+        padding: 50px 5%;
+    }
+
+    .section-heading h2 {
+        font-size: 1.8rem;
+    }
+
+    .module-grid {
+        grid-template-columns: 1fr;
+    }
+}
