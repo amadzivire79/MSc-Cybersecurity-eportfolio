@@ -1417,3 +1417,17 @@ a {
     }
 
 }
+
+.hero-name-title {
+    margin-top: 14px;
+    color: #9fd0ff;
+    font-size: 1.05rem;
+    font-weight: 600;
+    letter-spacing: 0.3px;
+}
+
+.profile-role {
+    color: #d7e7f5;
+    margin-top: 6px;
+    font-weight: 600;
+}
