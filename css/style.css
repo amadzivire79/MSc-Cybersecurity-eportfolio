@@ -1431,3 +1431,597 @@ a {
     margin-top: 6px;
     font-weight: 600;
 }
+
+/* =========================================
+   PROFESSIONAL MODULE PAGES
+========================================= */
+
+.module-hero {
+    background:
+        radial-gradient(circle at 80% 30%,
+        rgba(40, 140, 230, 0.20),
+        transparent 30%),
+        linear-gradient(115deg, #061426, #08233f);
+
+    color: white;
+    padding: 75px 5%;
+}
+
+.module-hero-container {
+    max-width: 1250px;
+    margin: auto;
+
+    display: grid;
+    grid-template-columns: 1.5fr 0.5fr;
+
+    gap: 60px;
+    align-items: center;
+}
+
+.module-meta {
+    display: flex;
+    align-items: center;
+    gap: 15px;
+
+    margin-bottom: 18px;
+}
+
+.module-hero-number {
+    color: #68baff;
+
+    font-size: 0.78rem;
+    font-weight: 800;
+
+    letter-spacing: 2px;
+}
+
+.module-hero h1 {
+    font-size: clamp(2.8rem, 5vw, 4.3rem);
+
+    line-height: 1.1;
+
+    max-width: 850px;
+
+    margin-bottom: 12px;
+}
+
+.module-subtitle {
+    color: #66baff;
+
+    font-weight: 700;
+
+    margin-bottom: 20px;
+}
+
+.module-hero-description {
+    max-width: 720px;
+
+    color: #cbdbea;
+
+    line-height: 1.8;
+}
+
+
+/* SUMMARY */
+
+.module-summary-card {
+    padding: 28px;
+
+    border-radius: 13px;
+
+    background: rgba(21, 49, 79, 0.7);
+
+    border: 1px solid rgba(135, 191, 239, 0.2);
+
+    box-shadow: 0 12px 35px rgba(0,0,0,0.18);
+}
+
+.summary-label {
+    color: #72bdfc !important;
+
+    font-size: 0.68rem;
+
+    font-weight: 800;
+
+    letter-spacing: 1.5px;
+}
+
+.module-summary-card h3 {
+    margin-top: 4px;
+}
+
+.summary-divider {
+    height: 1px;
+
+    background: rgba(255,255,255,0.15);
+
+    margin: 18px 0;
+}
+
+.summary-space {
+    margin-top: 15px;
+}
+
+
+/* MODULE PAGE NAV */
+
+.module-page-nav {
+    background: white;
+
+    border-bottom: 1px solid #dbe5ee;
+
+    position: sticky;
+
+    top: 76px;
+
+    z-index: 500;
+
+    box-shadow: 0 3px 10px rgba(35,70,100,0.05);
+}
+
+.module-page-nav div {
+    max-width: 1250px;
+
+    margin: auto;
+
+    padding: 0 5%;
+
+    display: flex;
+
+    gap: 28px;
+
+    overflow-x: auto;
+}
+
+.module-page-nav a {
+    color: #53697e;
+
+    font-size: 0.82rem;
+
+    font-weight: 700;
+
+    white-space: nowrap;
+
+    padding: 18px 0;
+
+    border-bottom: 3px solid transparent;
+}
+
+.module-page-nav a:hover {
+    color: #137cd4;
+
+    border-bottom-color: #137cd4;
+}
+
+
+/* CONTENT */
+
+.module-content-section {
+    padding: 70px 5%;
+
+    background: white;
+}
+
+.module-content-section.alternate {
+    background: #f5f8fb;
+}
+
+.module-content-container {
+    max-width: 1150px;
+
+    margin: auto;
+
+    display: grid;
+
+    grid-template-columns: 75px 1fr;
+
+    gap: 35px;
+}
+
+.section-number {
+    width: 55px;
+    height: 55px;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    border-radius: 50%;
+
+    color: #147bd3;
+
+    background: #e8f4ff;
+
+    font-size: 0.85rem;
+
+    font-weight: 800;
+}
+
+.module-content-container h2 {
+    color: #10243e;
+
+    font-size: 2rem;
+
+    margin-bottom: 18px;
+}
+
+.module-content-container p {
+    color: #5c7084;
+
+    line-height: 1.8;
+
+    margin-bottom: 16px;
+}
+
+.section-intro {
+    max-width: 800px;
+
+    margin-bottom: 28px !important;
+}
+
+.content-full {
+    width: 100%;
+}
+
+
+/* OUTCOMES */
+
+.outcome-grid {
+    display: grid;
+
+    grid-template-columns: repeat(2, 1fr);
+
+    gap: 18px;
+}
+
+.outcome-card {
+    background: white;
+
+    border: 1px solid #dbe5ee;
+
+    border-radius: 11px;
+
+    padding: 22px;
+
+    display: flex;
+
+    gap: 16px;
+
+    align-items: flex-start;
+}
+
+.outcome-card span {
+    min-width: 35px;
+    height: 35px;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    border-radius: 50%;
+
+    background: #147bd3;
+
+    color: white;
+
+    font-size: 0.72rem;
+
+    font-weight: 800;
+}
+
+.outcome-card p {
+    margin: 0;
+}
+
+
+/* ARTEFACTS */
+
+.artefact-grid {
+    display: grid;
+
+    grid-template-columns: repeat(3, 1fr);
+
+    gap: 20px;
+}
+
+.artefact-card {
+    padding: 25px;
+
+    border: 1px solid #dce6ef;
+
+    border-radius: 12px;
+
+    background: #f9fbfd;
+
+    transition: transform .25s ease,
+                box-shadow .25s ease;
+}
+
+.artefact-card:hover {
+    transform: translateY(-5px);
+
+    box-shadow: 0 12px 25px rgba(38,78,115,0.12);
+}
+
+.artefact-icon {
+    font-size: 2rem;
+
+    margin-bottom: 15px;
+}
+
+.artefact-card h3 {
+    color: #153f66;
+
+    margin-bottom: 9px;
+}
+
+.artefact-tag {
+    display: inline-block;
+
+    margin-top: 10px;
+
+    padding: 5px 9px;
+
+    border-radius: 12px;
+
+    background: #e5f3ff;
+
+    color: #1476c6;
+
+    font-size: .65rem;
+
+    font-weight: 800;
+
+    letter-spacing: .6px;
+}
+
+
+/* FEEDBACK */
+
+.reflection-box {
+    max-width: 850px;
+
+    display: flex;
+
+    gap: 20px;
+
+    padding: 28px;
+
+    background: white;
+
+    border-left: 4px solid #1984df;
+
+    border-radius: 8px;
+
+    box-shadow: 0 5px 15px rgba(37,75,110,.06);
+}
+
+.reflection-icon {
+    font-size: 2rem;
+}
+
+.reflection-box h3 {
+    color: #153f66;
+
+    margin-bottom: 8px;
+}
+
+.placeholder-note {
+    margin-top: 15px;
+
+    padding: 12px;
+
+    background: #fff8df;
+
+    border-radius: 6px;
+
+    font-size: .85rem;
+
+    font-style: italic;
+}
+
+
+/* SKILLS */
+
+.skill-development-grid {
+    display: grid;
+
+    grid-template-columns: repeat(2,1fr);
+
+    gap: 20px;
+}
+
+.skill-development-card {
+    background: white;
+
+    padding: 20px;
+
+    border: 1px solid #dce6ef;
+
+    border-radius: 10px;
+}
+
+.skill-development-card strong {
+    color: #24435f;
+}
+
+.skill-bar {
+    height: 7px;
+
+    background: #e3eaf0;
+
+    border-radius: 10px;
+
+    margin-top: 13px;
+
+    overflow: hidden;
+}
+
+.skill-level {
+    height: 100%;
+
+    background: linear-gradient(90deg,#1377cc,#42a8ff);
+
+    border-radius: 10px;
+}
+
+.level-3 {
+    width: 70%;
+}
+
+.level-4 {
+    width: 85%;
+}
+
+
+/* ACTION PLAN */
+
+.action-grid {
+    display: grid;
+
+    gap: 15px;
+}
+
+.action-card {
+    display: flex;
+
+    gap: 20px;
+
+    padding: 22px;
+
+    background: #f7fafc;
+
+    border: 1px solid #dce6ef;
+
+    border-radius: 10px;
+}
+
+.action-card > span {
+    min-width: 42px;
+    height: 42px;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    border-radius: 50%;
+
+    background: #147bd3;
+
+    color: white;
+
+    font-size: .75rem;
+
+    font-weight: 800;
+}
+
+.action-card h3 {
+    color: #163e63;
+
+    margin-bottom: 5px;
+}
+
+.action-card p {
+    margin: 0;
+}
+
+
+/* BOTTOM NAV */
+
+.module-bottom-navigation {
+    background: #edf3f8;
+
+    padding: 35px 5%;
+}
+
+.module-bottom-navigation > div {
+    max-width: 1150px;
+
+    margin: auto;
+
+    display: flex;
+
+    justify-content: space-between;
+
+    align-items: center;
+}
+
+.back-modules {
+    color: #176fb8;
+
+    font-weight: 700;
+}
+
+.next-module {
+    display: flex;
+
+    flex-direction: column;
+
+    text-align: right;
+}
+
+.next-module span {
+    color: #718397;
+
+    font-size: .65rem;
+
+    letter-spacing: 1.5px;
+
+    font-weight: 800;
+}
+
+.next-module strong {
+    color: #1475c6;
+
+    font-size: 1rem;
+}
+
+
+/* RESPONSIVE MODULE PAGES */
+
+@media(max-width:900px) {
+
+    .module-hero-container {
+        grid-template-columns: 1fr;
+    }
+
+    .module-summary-card {
+        max-width: 500px;
+    }
+
+    .artefact-grid {
+        grid-template-columns: 1fr;
+    }
+
+}
+
+@media(max-width:700px) {
+
+    .module-page-nav {
+        position: relative;
+
+        top: 0;
+    }
+
+    .module-content-container {
+        grid-template-columns: 1fr;
+    }
+
+    .outcome-grid,
+    .skill-development-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .module-bottom-navigation > div {
+        flex-direction: column;
+
+        align-items: flex-start;
+
+        gap: 25px;
+    }
+
+    .next-module {
+        text-align: left;
+    }
+
+}
