@@ -987,3 +987,433 @@ a {
     }
 
 }
+
+/* =========================================
+   ABOUT PAGE
+========================================= */
+
+.about-hero {
+    background:
+        radial-gradient(
+            circle at 80% 30%,
+            rgba(40, 140, 230, 0.22),
+            transparent 30%
+        ),
+        linear-gradient(
+            115deg,
+            #061426,
+            #08233f
+        );
+
+    color: white;
+
+    padding: 80px 5%;
+}
+
+.about-hero-container {
+    max-width: 1250px;
+    margin: auto;
+
+    display: grid;
+    grid-template-columns: 1.35fr 0.65fr;
+
+    gap: 60px;
+    align-items: center;
+}
+
+.about-hero h1 {
+    font-size: clamp(3rem, 5vw, 4.5rem);
+    margin-bottom: 15px;
+}
+
+.about-intro {
+    max-width: 760px;
+
+    color: #d9e7f3;
+
+    font-size: 1.05rem;
+
+    line-height: 1.8;
+
+    margin-bottom: 18px;
+}
+
+
+/* PROFILE CARD */
+
+.about-profile-card {
+    background: rgba(20, 48, 78, 0.7);
+
+    border: 1px solid rgba(156, 197, 234, 0.2);
+
+    border-radius: 16px;
+
+    padding: 35px;
+
+    text-align: center;
+
+    box-shadow: 0 15px 40px rgba(0, 0, 0, 0.2);
+}
+
+.profile-avatar {
+    width: 90px;
+    height: 90px;
+
+    margin: auto auto 18px;
+
+    border-radius: 50%;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    font-size: 2.5rem;
+
+    background: linear-gradient(
+        135deg,
+        #167bd5,
+        #4eb0ff
+    );
+}
+
+.about-profile-card h2 {
+    font-size: 1.35rem;
+}
+
+.profile-university {
+    color: #71c0ff;
+
+    margin-top: 5px;
+}
+
+.profile-divider {
+    width: 45px;
+    height: 2px;
+
+    background: #4babfa;
+
+    margin: 20px auto;
+}
+
+.about-profile-card p:last-child {
+    color: #c8d8e7;
+}
+
+
+/* MAIN ABOUT AREA */
+
+.about-section {
+    background: white;
+
+    padding: 80px 5%;
+}
+
+.about-container {
+    max-width: 1200px;
+
+    margin: auto;
+
+    display: grid;
+    grid-template-columns: 1.6fr 0.7fr;
+
+    gap: 55px;
+}
+
+.about-main-column h2 {
+    font-size: 2.2rem;
+
+    color: #10243e;
+
+    margin-bottom: 20px;
+}
+
+.about-main-column p {
+    color: #5e7186;
+
+    line-height: 1.8;
+
+    margin-bottom: 18px;
+}
+
+
+/* SIDE CARD */
+
+.about-side-card {
+    background: #f5f8fc;
+
+    border: 1px solid #dce6ef;
+
+    padding: 28px;
+
+    border-radius: 13px;
+
+    height: fit-content;
+}
+
+.about-side-card h3 {
+    color: #123f68;
+
+    margin-bottom: 18px;
+}
+
+.interest-list {
+    list-style: none;
+}
+
+.interest-list li {
+    padding: 10px 0;
+
+    border-bottom: 1px solid #dde6ee;
+
+    color: #53687d;
+}
+
+.interest-list li::before {
+    content: "✓";
+
+    color: #1a83de;
+
+    font-weight: bold;
+
+    margin-right: 9px;
+}
+
+.interest-list li:last-child {
+    border-bottom: none;
+}
+
+
+/* STRENGTHS */
+
+.strengths-section {
+    background: #f4f8fb;
+
+    padding: 80px 5%;
+}
+
+.strength-grid {
+    max-width: 1250px;
+
+    margin: auto;
+
+    display: grid;
+
+    grid-template-columns: repeat(3, 1fr);
+
+    gap: 24px;
+}
+
+.strength-card {
+    background: white;
+
+    padding: 28px;
+
+    border-radius: 13px;
+
+    border: 1px solid #dce6ef;
+
+    box-shadow: 0 5px 17px rgba(41, 81, 118, 0.07);
+
+    transition:
+        transform 0.25s ease,
+        box-shadow 0.25s ease;
+}
+
+.strength-card:hover {
+    transform: translateY(-5px);
+
+    box-shadow: 0 12px 28px rgba(41, 81, 118, 0.13);
+}
+
+.strength-icon {
+    width: 48px;
+    height: 48px;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    border-radius: 10px;
+
+    background: #e9f4ff;
+
+    font-size: 1.5rem;
+
+    margin-bottom: 18px;
+}
+
+.strength-card h3 {
+    color: #143d64;
+
+    margin-bottom: 10px;
+}
+
+.strength-card p {
+    color: #647589;
+
+    line-height: 1.7;
+
+    font-size: 0.92rem;
+}
+
+
+/* CAREER SECTION */
+
+.career-section {
+    background: white;
+
+    padding: 80px 5%;
+}
+
+.career-container {
+    max-width: 1200px;
+
+    margin: auto;
+
+    display: grid;
+
+    grid-template-columns: 1.2fr 0.8fr;
+
+    gap: 60px;
+}
+
+.career-container h2 {
+    font-size: 2.2rem;
+
+    color: #10243e;
+
+    margin-bottom: 18px;
+}
+
+.career-container p {
+    color: #617489;
+
+    line-height: 1.8;
+
+    margin-bottom: 16px;
+}
+
+
+/* GOALS */
+
+.career-goals {
+    display: flex;
+    flex-direction: column;
+
+    gap: 14px;
+}
+
+.goal-item {
+    display: flex;
+    align-items: center;
+
+    gap: 15px;
+
+    background: #f5f8fc;
+
+    border: 1px solid #dce6ef;
+
+    padding: 16px 18px;
+
+    border-radius: 10px;
+}
+
+.goal-item span {
+    min-width: 38px;
+    height: 38px;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    border-radius: 50%;
+
+    background: #137bd3;
+
+    color: white;
+
+    font-size: 0.8rem;
+
+    font-weight: 800;
+}
+
+.goal-item p {
+    margin: 0;
+
+    color: #445b70;
+
+    font-weight: 600;
+}
+
+
+/* CALL TO ACTION */
+
+.about-cta {
+    background:
+        linear-gradient(
+            115deg,
+            #06203b,
+            #0b3a64
+        );
+
+    color: white;
+
+    text-align: center;
+
+    padding: 65px 5%;
+}
+
+.about-cta div {
+    max-width: 760px;
+    margin: auto;
+}
+
+.about-cta h2 {
+    font-size: 2rem;
+
+    margin-bottom: 12px;
+}
+
+.about-cta p {
+    color: #c6d9e9;
+
+    margin-bottom: 25px;
+}
+
+
+/* RESPONSIVE */
+
+@media (max-width: 900px) {
+
+    .about-hero-container,
+    .about-container,
+    .career-container {
+        grid-template-columns: 1fr;
+    }
+
+    .about-profile-card {
+        max-width: 500px;
+    }
+
+    .strength-grid {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+}
+
+@media (max-width: 650px) {
+
+    .strength-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .about-hero {
+        padding-top: 55px;
+        padding-bottom: 55px;
+    }
+
+    .about-hero h1 {
+        font-size: 2.8rem;
+    }
+
+}
