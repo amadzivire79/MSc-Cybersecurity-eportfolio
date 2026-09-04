@@ -3,233 +3,709 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
     <title>Reflective Journal | MSc Cybersecurity E-Portfolio</title>
+
     <link rel="stylesheet" href="style.css">
 </head>
 
 <body>
 
-<header>
-    <nav class="navbar">
-        <div class="logo">MSc Cybersecurity</div>
+    <!-- =========================
+         NAVIGATION
+    ========================== -->
 
-        <ul class="nav-links">
-            <li><a href="index.html">Home</a></li>
-            <li><a href="about.html">About Me</a></li>
-            <li><a href="index.html#modules">Modules</a></li>
-            <li><a href="journal.html" class="active">Reflective Journal</a></li>
-        </ul>
-    </nav>
-</header>
+    <header class="site-header">
 
-<section class="journal-hero">
-    <div class="journal-hero-content">
-        <p class="eyebrow">MSc Cybersecurity E-Portfolio</p>
+        <nav class="navbar">
 
-        <h1>Reflective Learning Journal</h1>
-
-        <p>
-            A chronological record of my learning, observations, results,
-            challenges, feedback and professional development throughout
-            my MSc Cybersecurity programme.
-        </p>
-    </div>
-</section>
-
-<main class="journal-container">
-
-    <section class="journal-introduction">
-        <h2>Purpose of this Journal</h2>
-
-        <p>
-            This reflective journal documents the development of my knowledge,
-            technical skills and professional practice throughout the MSc
-            Cybersecurity programme. It provides an opportunity to critically
-            reflect on academic activities, practical exercises, seminar
-            discussions, assessment feedback and independent research.
-        </p>
-
-        <p>
-            Entries focus not only on what I completed, but also on what I
-            learned, the challenges encountered, how my understanding developed,
-            and how the experience may influence my future academic and
-            professional practice.
-        </p>
-    </section>
-
-
-    <!-- JOURNAL ENTRY 1 -->
-
-    <article class="journal-entry">
-
-        <div class="journal-meta">
-            <span>02 September 2026</span>
-            <span>Security and Risk Management</span>
-        </div>
-
-        <h2>GDPR Case Study Analysis</h2>
-
-        <h3>Activity</h3>
-        <p>
-            I reviewed a Data Protection Commission case study concerning
-            data protection and considered the specific GDPR principles
-            involved, how the issue was resolved, and how an Information
-            Security Manager could mitigate similar risks.
-        </p>
-
-        <h3>My Initial Thoughts</h3>
-        <p>
-            My initial understanding of GDPR compliance focused strongly on
-            preventing unauthorised access to or disclosure of personal data.
-            The activity encouraged me to consider data protection more broadly,
-            including organisational procedures, accountability, staff
-            awareness and governance.
-        </p>
-
-        <h3>Key Learning</h3>
-        <p>
-            One of my main observations was that effective information security
-            cannot depend entirely on technical controls. Organisations must
-            combine appropriate technologies with policies, procedures,
-            employee awareness, risk management and effective governance.
-        </p>
-
-        <h3>Reflection</h3>
-        <p>
-            The exercise strengthened my understanding of the relationship
-            between cybersecurity, information security governance and data
-            protection legislation. As an Information Security Manager, I would
-            therefore consider both technical vulnerabilities and weaknesses in
-            organisational processes when assessing information security risk.
-        </p>
-
-        <h3>Ideas and Questions</h3>
-        <p>
-            This activity raised an interesting question for further
-            investigation: how effectively can recognised information security
-            frameworks such as ISO/IEC 27001 and the NIST Cybersecurity
-            Framework support organisations in meeting their data protection
-            obligations?
-        </p>
-
-        <h3>Next Steps</h3>
-        <p>
-            I intend to explore the relationship between security frameworks,
-            risk management controls and GDPR requirements further during this
-            module.
-        </p>
-
-    </article>
-
-
-    <!-- JOURNAL ENTRY 2 -->
-
-    <article class="journal-entry">
-
-        <div class="journal-meta">
-            <span>August 2026</span>
-            <span>Network Security</span>
-        </div>
-
-        <h2>Vulnerability Scanning and Network Reconnaissance</h2>
-
-        <h3>Activity</h3>
-        <p>
-            I undertook practical network-security activities using tools and
-            techniques including Nmap, Nessus, traceroute, dig and nslookup to
-            investigate network infrastructure and identify potential security
-            weaknesses.
-        </p>
-
-        <h3>Results and Observations</h3>
-        <p>
-            The exercises demonstrated how information about hosts, network
-            services, open ports and software configurations can contribute to
-            identifying potential attack surfaces.
-        </p>
-
-        <h3>Reflection</h3>
-        <p>
-            The practical work helped me understand that vulnerability scanning
-            is not simply about producing a list of vulnerabilities. Results
-            must be interpreted within the context of the system, the potential
-            threat, likelihood of exploitation and possible organisational
-            impact.
-        </p>
-
-        <h3>Professional Relevance</h3>
-        <p>
-            This learning is particularly relevant to my developing interest in
-            network security because it demonstrates how network visibility,
-            vulnerability management and risk assessment contribute to a
-            defence-in-depth security strategy.
-        </p>
-
-        <h3>Next Steps</h3>
-        <p>
-            I intend to continue developing my ability to interpret
-            vulnerability scan results, investigate relevant CVEs and recommend
-            proportionate remediation measures.
-        </p>
-
-    </article>
-
-
-    <!-- TEMPLATE FOR FUTURE ENTRIES -->
-
-    <section class="journal-template">
-
-        <h2>Structure for Future Entries</h2>
-
-        <p>
-            Future reflections will generally follow the structure below:
-        </p>
-
-        <div class="reflection-grid">
-
-            <div>
-                <h3>01 — Activity</h3>
-                <p>What did I do?</p>
+            <div class="logo">
+                MSc Cybersecurity
             </div>
 
-            <div>
-                <h3>02 — Evidence</h3>
-                <p>What evidence or results did I produce?</p>
+            <ul class="nav-links">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="about.html">About Me</a></li>
+                <li><a href="index.html#modules">Modules</a></li>
+                <li><a href="journal.html" class="active">Reflective Journal</a></li>
+            </ul>
+
+        </nav>
+
+    </header>
+
+
+    <!-- =========================
+         HERO SECTION
+    ========================== -->
+
+    <section class="journal-hero">
+
+        <div class="journal-hero-inner">
+
+            <div class="journal-hero-text">
+
+                <p class="journal-label">
+                    MSc Cybersecurity E-Portfolio
+                </p>
+
+                <h1>Reflective Learning Journal</h1>
+
+                <p class="journal-intro">
+                    Documenting the development of my cybersecurity knowledge,
+                    technical skills and professional practice through academic
+                    study, practical investigation, feedback and critical reflection.
+                </p>
+
+                <div class="journal-buttons">
+
+                    <a href="#journal-entries" class="journal-primary-btn">
+                        Explore Journal
+                    </a>
+
+                    <a href="index.html#modules" class="journal-secondary-btn">
+                        View Modules
+                    </a>
+
+                </div>
+
             </div>
 
-            <div>
-                <h3>03 — Interpretation</h3>
-                <p>What do the findings mean?</p>
-            </div>
 
-            <div>
-                <h3>04 — Challenges</h3>
-                <p>What problems or limitations did I encounter?</p>
-            </div>
+            <div class="journal-summary-card">
 
-            <div>
-                <h3>05 — Reflection</h3>
-                <p>What have I learned?</p>
-            </div>
+                <p class="summary-heading">Learning Portfolio</p>
 
-            <div>
-                <h3>06 — Action</h3>
-                <p>What will I do differently or investigate next?</p>
+                <div class="summary-stat">
+                    <span class="summary-number">03</span>
+                    <span class="summary-text">Modules documented</span>
+                </div>
+
+                <div class="summary-stat">
+                    <span class="summary-number">08</span>
+                    <span class="summary-text">Learning activities</span>
+                </div>
+
+                <div class="summary-stat">
+                    <span class="summary-number">MSc</span>
+                    <span class="summary-text">Cybersecurity programme</span>
+                </div>
+
             </div>
 
         </div>
 
     </section>
 
-</main>
+
+    <!-- =========================
+         MAIN CONTENT
+    ========================== -->
+
+    <main class="journal-main">
 
 
-<footer>
-    <p>
-        MSc Cybersecurity E-Portfolio |
-        University of Essex Online
-    </p>
-</footer>
+        <!-- PURPOSE -->
+
+        <section class="journal-purpose">
+
+            <div class="section-heading">
+
+                <p class="section-kicker">
+                    Reflective Practice
+                </p>
+
+                <h2>Purpose of My Learning Journal</h2>
+
+            </div>
+
+            <div class="purpose-grid">
+
+                <div class="purpose-text">
+
+                    <p>
+                        This reflective journal provides a structured record of my
+                        academic and professional development throughout the MSc
+                        Cybersecurity programme. It captures important learning
+                        experiences from practical exercises, seminar activities,
+                        academic reading, assessments, collaborative work and
+                        independent investigation.
+                    </p>
+
+                    <p>
+                        My reflections focus not only on what I completed, but also
+                        on how my understanding changed, the challenges I encountered,
+                        the significance of my findings and how each learning experience
+                        contributes to my continuing development as a cybersecurity
+                        professional.
+                    </p>
+
+                </div>
+
+
+                <div class="reflection-framework">
+
+                    <p class="framework-title">
+                        Reflection Framework
+                    </p>
+
+                    <div class="framework-item">
+                        <span>01</span>
+                        <p>Activity and context</p>
+                    </div>
+
+                    <div class="framework-item">
+                        <span>02</span>
+                        <p>Evidence and findings</p>
+                    </div>
+
+                    <div class="framework-item">
+                        <span>03</span>
+                        <p>Critical interpretation</p>
+                    </div>
+
+                    <div class="framework-item">
+                        <span>04</span>
+                        <p>Learning and development</p>
+                    </div>
+
+                    <div class="framework-item">
+                        <span>05</span>
+                        <p>Future action</p>
+                    </div>
+
+                </div>
+
+            </div>
+
+        </section>
+
+
+        <!-- MODULE FILTER / TAGS -->
+
+        <section class="journal-categories">
+
+            <p class="section-kicker">Journal Categories</p>
+
+            <h2>Learning Across the Programme</h2>
+
+            <div class="category-buttons">
+
+                <a href="#journal-entries" class="category active-category">
+                    All Entries
+                </a>
+
+                <a href="#network-security" class="category">
+                    Network Security
+                </a>
+
+                <a href="#security-risk" class="category">
+                    Security &amp; Risk Management
+                </a>
+
+                <a href="#launch-computing" class="category">
+                    Launch into Computing
+                </a>
+
+            </div>
+
+        </section>
+
+
+        <!-- =========================
+             JOURNAL ENTRIES
+        ========================== -->
+
+        <section class="journal-entries" id="journal-entries">
+
+            <div class="section-heading journal-entry-heading">
+
+                <p class="section-kicker">
+                    Learning Record
+                </p>
+
+                <h2>Recent Reflections</h2>
+
+                <p>
+                    Selected reflections showing the development of my academic,
+                    technical and professional understanding.
+                </p>
+
+            </div>
+
+
+            <!-- ENTRY 1 -->
+
+            <article class="professional-journal-card" id="security-risk">
+
+                <div class="journal-card-top">
+
+                    <div class="journal-date-box">
+                        <span class="journal-day">02</span>
+                        <span class="journal-month">SEP</span>
+                        <span class="journal-year">2026</span>
+                    </div>
+
+                    <div class="journal-card-title">
+
+                        <span class="module-tag risk-tag">
+                            Security &amp; Risk Management
+                        </span>
+
+                        <h3>
+                            GDPR Case Study Analysis
+                        </h3>
+
+                        <p class="entry-description">
+                            Examining information security responsibilities,
+                            organisational controls and regulatory compliance.
+                        </p>
+
+                    </div>
+
+                </div>
+
+
+                <div class="journal-card-content">
+
+                    <div class="reflection-section">
+
+                        <span class="reflection-icon">01</span>
+
+                        <div>
+                            <h4>Activity</h4>
+
+                            <p>
+                                I reviewed a Data Protection Commission case study
+                                concerning the handling of personal information and
+                                considered the relevant data protection principles,
+                                the organisation's response and the measures that an
+                                Information Security Manager could implement to reduce
+                                the likelihood of a similar incident.
+                            </p>
+                        </div>
+
+                    </div>
+
+
+                    <div class="reflection-section">
+
+                        <span class="reflection-icon">02</span>
+
+                        <div>
+                            <h4>Key Learning</h4>
+
+                            <p>
+                                The activity demonstrated that effective information
+                                security requires more than technical safeguards.
+                                Governance, staff awareness, clearly defined procedures,
+                                accountability and risk management all contribute to the
+                                protection of personal information.
+                            </p>
+                        </div>
+
+                    </div>
+
+
+                    <div class="reflection-section reflection-highlight">
+
+                        <span class="reflection-icon">03</span>
+
+                        <div>
+                            <h4>Critical Reflection</h4>
+
+                            <p>
+                                My initial understanding of data protection focused
+                                mainly on preventing unauthorised access or disclosure.
+                                The case study broadened my perspective by showing that
+                                weaknesses in organisational processes and decision-making
+                                can create significant information security risks even
+                                when technical controls are available.
+                            </p>
+                        </div>
+
+                    </div>
+
+
+                    <div class="reflection-section">
+
+                        <span class="reflection-icon">04</span>
+
+                        <div>
+                            <h4>Professional Relevance</h4>
+
+                            <p>
+                                As a future cybersecurity professional, this reinforces
+                                the importance of assessing people, processes and
+                                technology together rather than treating information
+                                security as a purely technical discipline.
+                            </p>
+                        </div>
+
+                    </div>
+
+
+                    <div class="reflection-section">
+
+                        <span class="reflection-icon">05</span>
+
+                        <div>
+                            <h4>Next Step</h4>
+
+                            <p>
+                                I intend to explore how recognised security frameworks
+                                such as ISO/IEC 27001 and the NIST Cybersecurity Framework
+                                can support organisations in managing information security
+                                and data protection obligations systematically.
+                            </p>
+                        </div>
+
+                    </div>
+
+                </div>
+
+            </article>
+
+
+
+            <!-- ENTRY 2 -->
+
+            <article class="professional-journal-card" id="network-security">
+
+                <div class="journal-card-top">
+
+                    <div class="journal-date-box">
+                        <span class="journal-day">20</span>
+                        <span class="journal-month">AUG</span>
+                        <span class="journal-year">2026</span>
+                    </div>
+
+                    <div class="journal-card-title">
+
+                        <span class="module-tag network-tag">
+                            Network Security
+                        </span>
+
+                        <h3>
+                            Vulnerability Scanning and Network Reconnaissance
+                        </h3>
+
+                        <p class="entry-description">
+                            Developing practical understanding of network visibility,
+                            attack surfaces and risk-based vulnerability management.
+                        </p>
+
+                    </div>
+
+                </div>
+
+
+                <div class="journal-card-content">
+
+                    <div class="reflection-section">
+
+                        <span class="reflection-icon">01</span>
+
+                        <div>
+                            <h4>Activity</h4>
+
+                            <p>
+                                I completed practical network security activities
+                                involving tools and techniques such as Nmap, Nessus,
+                                traceroute, dig and nslookup. These exercises were used
+                                to gather information about network hosts, services,
+                                software and potential vulnerabilities.
+                            </p>
+                        </div>
+
+                    </div>
+
+
+                    <div class="reflection-section">
+
+                        <span class="reflection-icon">02</span>
+
+                        <div>
+                            <h4>Results and Observations</h4>
+
+                            <p>
+                                The exercises demonstrated how information about open
+                                ports, running services, network paths and software
+                                configurations can provide valuable information for
+                                identifying potential attack surfaces.
+                            </p>
+                        </div>
+
+                    </div>
+
+
+                    <div class="reflection-section reflection-highlight">
+
+                        <span class="reflection-icon">03</span>
+
+                        <div>
+                            <h4>Critical Reflection</h4>
+
+                            <p>
+                                Initially, I viewed vulnerability scanning primarily
+                                as a method of identifying technical weaknesses.
+                                However, I increasingly recognised that scan results
+                                require interpretation. Severity ratings alone do not
+                                necessarily determine organisational risk.
+                            </p>
+
+                            <p>
+                                Factors such as exploitability, exposure, asset value,
+                                business impact and existing controls must also be
+                                considered when deciding remediation priorities.
+                            </p>
+                        </div>
+
+                    </div>
+
+
+                    <div class="reflection-section">
+
+                        <span class="reflection-icon">04</span>
+
+                        <div>
+                            <h4>Professional Relevance</h4>
+
+                            <p>
+                                This activity strengthened my interest in network
+                                security and vulnerability management. It demonstrated
+                                how technical investigation can support risk-based
+                                cybersecurity decision-making.
+                            </p>
+                        </div>
+
+                    </div>
+
+
+                    <div class="reflection-section">
+
+                        <span class="reflection-icon">05</span>
+
+                        <div>
+                            <h4>Next Step</h4>
+
+                            <p>
+                                I plan to develop greater confidence in analysing CVEs,
+                                validating vulnerability scanner findings and recommending
+                                proportionate remediation measures based on technical and
+                                organisational risk.
+                            </p>
+                        </div>
+
+                    </div>
+
+                </div>
+
+            </article>
+
+
+
+            <!-- ENTRY 3 -->
+
+            <article class="professional-journal-card" id="launch-computing">
+
+                <div class="journal-card-top">
+
+                    <div class="journal-date-box">
+                        <span class="journal-day">15</span>
+                        <span class="journal-month">JUL</span>
+                        <span class="journal-year">2026</span>
+                    </div>
+
+                    <div class="journal-card-title">
+
+                        <span class="module-tag computing-tag">
+                            Launch into Computing
+                        </span>
+
+                        <h3>
+                            Developing Technical Confidence and Computational Thinking
+                        </h3>
+
+                        <p class="entry-description">
+                            Reflecting on the development of computational problem-solving
+                            and practical technical skills.
+                        </p>
+
+                    </div>
+
+                </div>
+
+
+                <div class="journal-card-content">
+
+                    <div class="reflection-section">
+
+                        <span class="reflection-icon">01</span>
+
+                        <div>
+                            <h4>Activity</h4>
+
+                            <p>
+                                During Launch into Computing, I engaged with practical
+                                computing activities that required structured
+                                problem-solving, interpretation of technical information
+                                and the use of computing tools to investigate problems.
+                            </p>
+                        </div>
+
+                    </div>
+
+
+                    <div class="reflection-section reflection-highlight">
+
+                        <span class="reflection-icon">02</span>
+
+                        <div>
+                            <h4>Reflection</h4>
+
+                            <p>
+                                One of the most important developments from this module
+                                was greater confidence in approaching unfamiliar technical
+                                tasks. Rather than expecting an immediate solution, I began
+                                to approach problems systematically by identifying the
+                                objective, breaking the task into smaller stages, testing
+                                possible solutions and evaluating the outcome.
+                            </p>
+                        </div>
+
+                    </div>
+
+
+                    <div class="reflection-section">
+
+                        <span class="reflection-icon">03</span>
+
+                        <div>
+                            <h4>Professional Development</h4>
+
+                            <p>
+                                This structured problem-solving approach is highly relevant
+                                to cybersecurity, where practitioners regularly encounter
+                                incomplete information, unfamiliar systems and rapidly
+                                evolving technical challenges.
+                            </p>
+                        </div>
+
+                    </div>
+
+
+                    <div class="reflection-section">
+
+                        <span class="reflection-icon">04</span>
+
+                        <div>
+                            <h4>Next Step</h4>
+
+                            <p>
+                                I will continue strengthening my practical computing,
+                                scripting and analytical skills and apply them to more
+                                advanced network security and cybersecurity investigations.
+                            </p>
+                        </div>
+
+                    </div>
+
+                </div>
+
+            </article>
+
+        </section>
+
+
+        <!-- =========================
+             FUTURE REFLECTION TEMPLATE
+        ========================== -->
+
+        <section class="future-reflection">
+
+            <div class="future-reflection-heading">
+
+                <p class="section-kicker">
+                    Continuing Development
+                </p>
+
+                <h2>My Reflection Process</h2>
+
+                <p>
+                    Future entries will use this structure to maintain consistency
+                    and demonstrate progressive learning throughout the programme.
+                </p>
+
+            </div>
+
+
+            <div class="reflection-process-grid">
+
+                <div class="process-card">
+                    <span>01</span>
+                    <h3>Context</h3>
+                    <p>What activity, topic or problem was I working on?</p>
+                </div>
+
+                <div class="process-card">
+                    <span>02</span>
+                    <h3>Evidence</h3>
+                    <p>What results, artefacts or observations did I produce?</p>
+                </div>
+
+                <div class="process-card">
+                    <span>03</span>
+                    <h3>Interpret</h3>
+                    <p>What do the findings mean and why are they important?</p>
+                </div>
+
+                <div class="process-card">
+                    <span>04</span>
+                    <h3>Reflect</h3>
+                    <p>How has my understanding changed?</p>
+                </div>
+
+                <div class="process-card">
+                    <span>05</span>
+                    <h3>Apply</h3>
+                    <p>How does this relate to cybersecurity practice?</p>
+                </div>
+
+                <div class="process-card">
+                    <span>06</span>
+                    <h3>Develop</h3>
+                    <p>What will I investigate, practise or improve next?</p>
+                </div>
+
+            </div>
+
+        </section>
+
+    </main>
+
+
+    <!-- =========================
+         FOOTER
+    ========================== -->
+
+    <footer class="journal-footer">
+
+        <div>
+
+            <h3>MSc Cybersecurity E-Portfolio</h3>
+
+            <p>
+                Academic learning, technical development and professional reflection.
+            </p>
+
+        </div>
+
+        <p>
+            University of Essex Online
+        </p>
+
+    </footer>
 
 </body>
 </html>
