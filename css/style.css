@@ -3071,3 +3071,576 @@ a {
         padding: 25px;
     }
 }
+
+/* ======================================================
+   REFLECTIVE JOURNAL PAGE
+   ====================================================== */
+
+.rj-container {
+    width: min(1180px, 90%);
+    margin: 0 auto;
+}
+
+
+/* JOURNAL HERO */
+
+.rj-hero {
+    background:
+        radial-gradient(
+            circle at 82% 25%,
+            rgba(48, 153, 245, 0.20),
+            transparent 32%
+        ),
+        linear-gradient(
+            115deg,
+            #061426,
+            #08233f
+        );
+
+    color: white;
+    padding: 78px 5%;
+}
+
+.rj-hero-container {
+    max-width: 1250px;
+    margin: auto;
+
+    display: grid;
+    grid-template-columns: 1.45fr 0.65fr;
+
+    gap: 55px;
+    align-items: center;
+}
+
+.rj-eyebrow {
+    color: #62b8ff;
+
+    text-transform: uppercase;
+
+    font-size: 0.78rem;
+    font-weight: 800;
+
+    letter-spacing: 2px;
+
+    margin-bottom: 10px;
+}
+
+.rj-hero h1 {
+    font-size: clamp(3rem, 5vw, 4.7rem);
+    line-height: 1.05;
+
+    margin-bottom: 22px;
+}
+
+.rj-hero h1 span {
+    display: block;
+    color: #42a5ff;
+}
+
+.rj-hero-description {
+    max-width: 720px;
+
+    color: #d4e3f0;
+
+    font-size: 1.05rem;
+    line-height: 1.8;
+}
+
+.rj-hero-buttons {
+    display: flex;
+    flex-wrap: wrap;
+
+    gap: 15px;
+
+    margin-top: 30px;
+}
+
+
+/* HERO SUMMARY */
+
+.rj-summary-card {
+    padding: 30px;
+
+    border-radius: 14px;
+
+    background: rgba(19, 46, 76, 0.72);
+
+    border:
+        1px solid
+        rgba(134, 190, 239, 0.22);
+
+    box-shadow:
+        0 15px 38px
+        rgba(0, 0, 0, 0.20);
+}
+
+.rj-summary-label {
+    color: #73c2ff;
+
+    font-size: 0.67rem;
+    font-weight: 800;
+
+    letter-spacing: 1.6px;
+}
+
+.rj-summary-card h2 {
+    margin: 8px 0 14px;
+
+    font-size: 1.4rem;
+}
+
+.rj-summary-card p {
+    color: #c8d9e8;
+
+    line-height: 1.75;
+
+    font-size: 0.92rem;
+}
+
+.rj-summary-divider {
+    height: 1px;
+
+    background:
+        rgba(255, 255, 255, 0.15);
+
+    margin: 22px 0;
+}
+
+.rj-summary-stat {
+    display: flex;
+    align-items: center;
+
+    gap: 15px;
+
+    margin-top: 13px;
+}
+
+.rj-summary-stat strong {
+    color: #58b5ff;
+
+    font-size: 1.7rem;
+}
+
+.rj-summary-stat span {
+    color: #d6e5f1;
+
+    font-size: 0.86rem;
+}
+
+
+/* SECTION LAYOUT */
+
+.rj-intro-section,
+.rj-future-section {
+    padding: 75px 0;
+
+    background: #f5f8fc;
+}
+
+.rj-entries-section {
+    padding: 80px 0;
+
+    background: white;
+}
+
+.rj-section-heading {
+    max-width: 820px;
+
+    margin:
+        0 auto 45px;
+
+    text-align: center;
+}
+
+.rj-section-heading h2 {
+    color: #10243e;
+
+    font-size: 2.25rem;
+
+    margin-bottom: 12px;
+}
+
+.rj-section-heading > p:last-child {
+    color: #62758a;
+
+    line-height: 1.75;
+}
+
+
+/* FRAMEWORK */
+
+.rj-framework-grid {
+    display: grid;
+
+    grid-template-columns:
+        repeat(5, 1fr);
+
+    gap: 17px;
+}
+
+.rj-framework-card {
+    background: white;
+
+    border:
+        1px solid #dce6ef;
+
+    border-radius: 12px;
+
+    padding: 24px;
+
+    box-shadow:
+        0 6px 18px
+        rgba(40, 78, 113, 0.06);
+}
+
+.rj-framework-card span {
+    width: 36px;
+    height: 36px;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    border-radius: 8px;
+
+    background: #e8f4ff;
+    color: #1378cc;
+
+    font-size: 0.72rem;
+    font-weight: 800;
+
+    margin-bottom: 16px;
+}
+
+.rj-framework-card h3 {
+    color: #163f65;
+
+    margin-bottom: 9px;
+}
+
+.rj-framework-card p {
+    color: #66798b;
+
+    font-size: 0.88rem;
+    line-height: 1.65;
+}
+
+
+/* JOURNAL ENTRY */
+
+.rj-entry-card {
+    margin-bottom: 42px;
+
+    border:
+        1px solid #dce6ef;
+
+    border-radius: 15px;
+
+    background: #fdfefe;
+
+    overflow: hidden;
+
+    box-shadow:
+        0 10px 30px
+        rgba(36, 73, 108, 0.08);
+}
+
+.rj-entry-header {
+    display: grid;
+
+    grid-template-columns:
+        92px 1fr;
+
+    gap: 26px;
+
+    align-items: center;
+
+    padding: 30px 35px;
+
+    background:
+        linear-gradient(
+            180deg,
+            #fbfdff,
+            #f6f9fc
+        );
+
+    border-bottom:
+        1px solid #e5ebf1;
+}
+
+.rj-date-box {
+    width: 76px;
+    height: 76px;
+
+    border-radius: 12px;
+
+    background:
+        linear-gradient(
+            135deg,
+            #147bd4,
+            #46aaf7
+        );
+
+    color: white;
+
+    display: flex;
+    flex-direction: column;
+
+    align-items: center;
+    justify-content: center;
+
+    box-shadow:
+        0 7px 18px
+        rgba(21, 119, 207, 0.22);
+}
+
+.rj-date-box span {
+    font-size: 0.56rem;
+
+    letter-spacing: 1px;
+}
+
+.rj-date-box strong {
+    font-size: 1.55rem;
+}
+
+.rj-entry-meta {
+    display: flex;
+
+    flex-wrap: wrap;
+
+    gap: 9px;
+
+    margin-bottom: 9px;
+}
+
+.rj-module-tag,
+.rj-entry-status {
+    display: inline-block;
+
+    padding:
+        5px 10px;
+
+    border-radius: 14px;
+
+    font-size: 0.66rem;
+    font-weight: 800;
+}
+
+.rj-module-tag {
+    color: #126db7;
+    background: #e5f3ff;
+}
+
+.rj-entry-status {
+    color: #526477;
+    background: #e9eef3;
+}
+
+.rj-entry-header h3 {
+    color: #102f4d;
+
+    font-size: 1.55rem;
+
+    margin-bottom: 5px;
+}
+
+.rj-entry-header p {
+    color: #64778a;
+
+    font-size: 0.92rem;
+}
+
+
+/* REFLECTION CARDS */
+
+.rj-card-grid {
+    padding: 30px 35px 35px;
+
+    display: grid;
+
+    grid-template-columns:
+        repeat(2, 1fr);
+
+    gap: 20px;
+}
+
+.rj-reflection-card {
+    background: white;
+
+    border:
+        1px solid #dde6ee;
+
+    border-radius: 12px;
+
+    padding: 24px;
+
+    transition:
+        transform 0.25s ease,
+        box-shadow 0.25s ease,
+        border 0.25s ease;
+}
+
+.rj-reflection-card:hover {
+    transform: translateY(-4px);
+
+    border-color: #a8d3f4;
+
+    box-shadow:
+        0 10px 24px
+        rgba(34, 82, 124, 0.10);
+}
+
+.rj-card-number {
+    width: 36px;
+    height: 36px;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    border-radius: 8px;
+
+    background: #e8f4ff;
+    color: #1378cc;
+
+    font-size: 0.7rem;
+    font-weight: 800;
+
+    margin-bottom: 16px;
+}
+
+.rj-reflection-card h4 {
+    color: #163e63;
+
+    font-size: 1.05rem;
+
+    margin-bottom: 10px;
+}
+
+.rj-reflection-card p {
+    color: #607487;
+
+    line-height: 1.75;
+
+    font-size: 0.91rem;
+}
+
+.rj-highlight-card {
+    grid-column: 1 / -1;
+
+    border-left:
+        5px solid #1881d8;
+
+    background:
+        linear-gradient(
+            135deg,
+            #edf7ff,
+            #f7fbff
+        );
+}
+
+
+/* FUTURE REFLECTIONS */
+
+.rj-future-grid {
+    display: grid;
+
+    grid-template-columns:
+        repeat(6, 1fr);
+
+    gap: 15px;
+}
+
+.rj-future-card {
+    padding: 22px 14px;
+
+    border-radius: 11px;
+
+    border:
+        1px solid #dae5ef;
+
+    background: white;
+
+    text-align: center;
+
+    box-shadow:
+        0 5px 15px
+        rgba(35, 70, 100, 0.05);
+}
+
+.rj-future-card span {
+    display: block;
+
+    color: #1680d9;
+
+    font-size: 0.7rem;
+    font-weight: 800;
+
+    margin-bottom: 8px;
+}
+
+.rj-future-card strong {
+    color: #284b69;
+
+    font-size: 0.83rem;
+}
+
+
+/* RESPONSIVE JOURNAL */
+
+@media (max-width: 1000px) {
+
+    .rj-hero-container {
+        grid-template-columns: 1fr;
+    }
+
+    .rj-summary-card {
+        max-width: 600px;
+    }
+
+    .rj-framework-grid {
+        grid-template-columns:
+            repeat(2, 1fr);
+    }
+
+    .rj-future-grid {
+        grid-template-columns:
+            repeat(3, 1fr);
+    }
+
+}
+
+
+@media (max-width: 700px) {
+
+    .rj-hero {
+        padding-top: 55px;
+        padding-bottom: 55px;
+    }
+
+    .rj-entry-header {
+        grid-template-columns: 1fr;
+    }
+
+    .rj-date-box {
+        width: 70px;
+        height: 70px;
+    }
+
+    .rj-card-grid {
+        grid-template-columns: 1fr;
+
+        padding: 23px;
+    }
+
+    .rj-highlight-card {
+        grid-column: auto;
+    }
+
+    .rj-framework-grid,
+    .rj-future-grid {
+        grid-template-columns: 1fr;
+    }
+
+}
