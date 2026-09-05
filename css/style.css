@@ -3644,3 +3644,784 @@ a {
     }
 
 }
+
+/* =========================================================
+   MODULE 3 - ASSESSMENT EVIDENCE SYSTEM
+   Assignments | Activities | Projects | Discussions
+========================================================= */
+
+
+/* =========================================================
+   GENERAL EVIDENCE TEXT
+========================================================= */
+
+.evidence-intro {
+    max-width: 900px;
+    color: #60758a;
+    line-height: 1.8;
+    margin-bottom: 35px;
+}
+
+
+
+/* =========================================================
+   EVIDENCE GRID
+========================================================= */
+
+.evidence-grid {
+    display: grid;
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+    gap: 26px;
+    margin-top: 30px;
+}
+
+
+.evidence-grid-three {
+    grid-template-columns: repeat(3, minmax(0, 1fr));
+}
+
+
+
+/* =========================================================
+   EVIDENCE CARDS
+========================================================= */
+
+.evidence-card {
+    position: relative;
+
+    display: flex;
+    flex-direction: column;
+
+    background: #ffffff;
+
+    border: 1px solid #dbe6f0;
+
+    border-radius: 16px;
+
+    padding: 30px;
+
+    box-shadow:
+        0 6px 20px rgba(21, 62, 99, 0.07);
+
+    transition:
+        transform 0.25s ease,
+        box-shadow 0.25s ease,
+        border-color 0.25s ease;
+}
+
+
+.evidence-card:hover {
+    transform: translateY(-5px);
+
+    border-color: #a6d2f7;
+
+    box-shadow:
+        0 16px 35px rgba(26, 84, 137, 0.13);
+}
+
+
+.featured-evidence {
+    border-top: 4px solid #1976d2;
+}
+
+
+
+/* =========================================================
+   CARD TOP
+========================================================= */
+
+.evidence-card-top {
+    display: flex;
+
+    justify-content: space-between;
+    align-items: center;
+
+    gap: 15px;
+
+    margin-bottom: 20px;
+}
+
+
+.evidence-unit {
+    color: #718399;
+
+    font-size: 0.72rem;
+    font-weight: 800;
+
+    letter-spacing: 1px;
+}
+
+
+
+/* =========================================================
+   BADGES
+========================================================= */
+
+.evidence-badge {
+    display: inline-flex;
+
+    width: fit-content;
+
+    padding: 6px 11px;
+
+    border-radius: 20px;
+
+    font-size: 0.68rem;
+    font-weight: 800;
+
+    letter-spacing: 1px;
+}
+
+
+.assignment-badge {
+    color: #0b5394;
+    background: #dceeff;
+}
+
+
+.activity-badge {
+    color: #166534;
+    background: #dcfce7;
+}
+
+
+.project-badge {
+    color: #6b3f00;
+    background: #fef3c7;
+}
+
+
+.discussion-badge {
+    color: #6b21a8;
+    background: #f3e8ff;
+}
+
+
+
+/* =========================================================
+   EVIDENCE ICON
+========================================================= */
+
+.evidence-icon {
+    width: 54px;
+    height: 54px;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    border-radius: 12px;
+
+    background: #eef7ff;
+
+    font-size: 1.6rem;
+
+    margin-bottom: 18px;
+}
+
+
+
+/* =========================================================
+   EVIDENCE TEXT
+========================================================= */
+
+.evidence-card h3 {
+    color: #113653;
+
+    font-size: 1.25rem;
+
+    line-height: 1.35;
+
+    margin-bottom: 14px;
+}
+
+
+.evidence-card > p {
+    color: #63778a;
+
+    line-height: 1.75;
+
+    margin-bottom: 20px;
+}
+
+
+.evidence-details {
+    padding-top: 18px;
+
+    margin-top: 5px;
+
+    border-top: 1px solid #e4ebf1;
+}
+
+
+.evidence-details p {
+    color: #53697c;
+
+    font-size: 0.9rem;
+
+    line-height: 1.7;
+
+    margin-bottom: 10px;
+}
+
+
+
+/* =========================================================
+   MINI REFLECTION
+========================================================= */
+
+.evidence-reflection {
+    margin-top: 14px;
+
+    padding: 18px;
+
+    background: #f6f9fc;
+
+    border-left: 3px solid #278ee8;
+
+    border-radius: 0 9px 9px 0;
+}
+
+
+.evidence-reflection strong {
+    display: block;
+
+    color: #174f7d;
+
+    margin-bottom: 7px;
+}
+
+
+.evidence-reflection p {
+    color: #607287;
+
+    font-size: 0.88rem;
+
+    line-height: 1.7;
+}
+
+
+
+/* =========================================================
+   EVIDENCE BUTTON
+========================================================= */
+
+.evidence-button {
+    display: inline-flex;
+
+    align-items: center;
+    justify-content: center;
+
+    width: fit-content;
+
+    margin-top: 24px;
+
+    padding: 11px 18px;
+
+    border-radius: 7px;
+
+    color: #ffffff;
+
+    background:
+        linear-gradient(
+            135deg,
+            #116fc2,
+            #2794ed
+        );
+
+    font-size: 0.86rem;
+
+    font-weight: 800;
+
+    transition:
+        transform 0.2s ease,
+        box-shadow 0.2s ease,
+        background 0.2s ease;
+}
+
+
+.evidence-button:hover {
+    transform: translateY(-2px);
+
+    background: #1786e2;
+
+    box-shadow:
+        0 8px 18px rgba(24, 119, 210, 0.22);
+}
+
+
+.secondary-evidence-button {
+    background: #edf6fd;
+
+    color: #126ab4;
+
+    border: 1px solid #b7d9f5;
+}
+
+
+.secondary-evidence-button:hover {
+    color: #ffffff;
+}
+
+
+
+/* =========================================================
+   PROJECT SHOWCASE
+========================================================= */
+
+.project-showcase-card {
+    margin-top: 30px;
+
+    padding: 36px;
+
+    background: #ffffff;
+
+    border: 1px solid #d9e5ef;
+
+    border-radius: 17px;
+
+    box-shadow:
+        0 8px 24px rgba(31, 72, 110, 0.08);
+}
+
+
+.project-showcase-heading {
+    display: flex;
+
+    align-items: center;
+
+    gap: 18px;
+
+    margin-bottom: 30px;
+}
+
+
+.project-icon {
+    min-width: 62px;
+    height: 62px;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    border-radius: 13px;
+
+    background: #edf6ff;
+
+    font-size: 1.8rem;
+}
+
+
+.project-showcase-heading h3 {
+    color: #123a5d;
+
+    font-size: 1.45rem;
+
+    margin-top: 8px;
+}
+
+
+.project-showcase-grid {
+    display: grid;
+
+    grid-template-columns:
+        repeat(3, minmax(0, 1fr));
+
+    gap: 28px;
+
+    padding-top: 25px;
+
+    border-top: 1px solid #e0e8ef;
+}
+
+
+.project-showcase-grid h4 {
+    color: #164d7a;
+
+    margin-bottom: 11px;
+}
+
+
+.project-showcase-grid p {
+    color: #607489;
+
+    font-size: 0.92rem;
+
+    line-height: 1.75;
+
+    margin-bottom: 12px;
+}
+
+
+.project-skill-list {
+    list-style: none;
+}
+
+
+.project-skill-list li {
+    color: #536a7d;
+
+    padding: 8px 0;
+
+    border-bottom: 1px solid #edf1f5;
+}
+
+
+.project-skill-list li::before {
+    content: "✓";
+
+    color: #1683df;
+
+    font-weight: bold;
+
+    margin-right: 9px;
+}
+
+
+.project-reflection {
+    margin-top: 30px;
+
+    padding: 22px 24px;
+
+    background: #f6f9fc;
+
+    border-radius: 10px;
+
+    border-left: 4px solid #1b84df;
+}
+
+
+.project-reflection strong {
+    display: block;
+
+    color: #124b78;
+
+    margin-bottom: 8px;
+}
+
+
+.project-reflection p {
+    color: #5f7488;
+
+    line-height: 1.75;
+}
+
+
+
+/* =========================================================
+   DISCUSSIONS
+========================================================= */
+
+.discussion-grid {
+    display: grid;
+
+    grid-template-columns:
+        repeat(2, minmax(0, 1fr));
+
+    gap: 26px;
+
+    margin-top: 32px;
+}
+
+
+.discussion-card {
+    background: #ffffff;
+
+    padding: 30px;
+
+    border: 1px solid #dbe5ee;
+
+    border-radius: 15px;
+
+    box-shadow:
+        0 7px 20px rgba(31, 75, 112, 0.07);
+}
+
+
+.discussion-card h3 {
+    color: #163d60;
+
+    font-size: 1.25rem;
+
+    margin: 17px 0 24px;
+}
+
+
+.discussion-stage {
+    display: grid;
+
+    grid-template-columns: 38px 1fr;
+
+    gap: 13px;
+
+    padding: 17px 0;
+
+    border-top: 1px solid #e6edf3;
+}
+
+
+.discussion-stage > span {
+    width: 32px;
+    height: 32px;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    border-radius: 50%;
+
+    background: #eaf4fe;
+
+    color: #1577ca;
+
+    font-size: 0.72rem;
+    font-weight: 800;
+}
+
+
+.discussion-stage h4 {
+    color: #164e79;
+
+    margin-bottom: 6px;
+}
+
+
+.discussion-stage p {
+    color: #607489;
+
+    font-size: 0.89rem;
+
+    line-height: 1.7;
+}
+
+
+
+/* =========================================================
+   ACADEMIC DEVELOPMENT CARDS
+========================================================= */
+
+.knowledge-grid {
+    display: grid;
+
+    grid-template-columns:
+        repeat(3, minmax(0, 1fr));
+
+    gap: 23px;
+
+    margin-top: 32px;
+}
+
+
+.knowledge-card {
+    position: relative;
+
+    padding: 28px;
+
+    background: #ffffff;
+
+    border: 1px solid #dae5ee;
+
+    border-radius: 14px;
+
+    box-shadow:
+        0 5px 18px rgba(30, 72, 110, 0.06);
+}
+
+
+.knowledge-number {
+    width: 38px;
+    height: 38px;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    margin-bottom: 17px;
+
+    border-radius: 9px;
+
+    background: #eaf4fd;
+
+    color: #1778cb;
+
+    font-size: 0.74rem;
+    font-weight: 800;
+}
+
+
+.knowledge-card h3 {
+    color: #123d62;
+
+    margin-bottom: 10px;
+}
+
+
+.knowledge-card p {
+    color: #627589;
+
+    font-size: 0.9rem;
+
+    line-height: 1.75;
+}
+
+
+
+/* =========================================================
+   FEEDBACK
+========================================================= */
+
+.feedback-layout {
+    display: grid;
+
+    grid-template-columns:
+        repeat(3, minmax(0, 1fr));
+
+    gap: 24px;
+
+    margin-top: 30px;
+}
+
+
+.feedback-card {
+    background: #ffffff;
+
+    padding: 28px;
+
+    border: 1px solid #dce6ef;
+
+    border-radius: 14px;
+
+    box-shadow:
+        0 5px 16px rgba(31, 72, 110, 0.06);
+}
+
+
+.feedback-icon {
+    width: 48px;
+    height: 48px;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    margin-bottom: 17px;
+
+    border-radius: 11px;
+
+    background: #edf6fe;
+
+    font-size: 1.45rem;
+}
+
+
+.feedback-card h3 {
+    color: #143f64;
+
+    margin-bottom: 10px;
+}
+
+
+.feedback-card p {
+    color: #63768a;
+
+    font-size: 0.91rem;
+
+    line-height: 1.75;
+}
+
+
+
+/* =========================================================
+   REFLECTIVE JOURNAL LINK
+========================================================= */
+
+.reflection-journal-link {
+    display: inline-flex;
+
+    margin-top: 15px;
+
+    color: #0e72c8;
+
+    font-weight: 800;
+
+    border-bottom: 2px solid #8cc8f7;
+
+    padding-bottom: 3px;
+}
+
+
+.reflection-journal-link:hover {
+    color: #064f94;
+}
+
+
+
+/* =========================================================
+   RESPONSIVE - TABLET
+========================================================= */
+
+@media (max-width: 1100px) {
+
+    .evidence-grid-three {
+        grid-template-columns:
+            repeat(2, minmax(0, 1fr));
+    }
+
+
+    .project-showcase-grid {
+        grid-template-columns:
+            repeat(2, minmax(0, 1fr));
+    }
+
+
+    .knowledge-grid {
+        grid-template-columns:
+            repeat(2, minmax(0, 1fr));
+    }
+
+
+    .feedback-layout {
+        grid-template-columns:
+            repeat(2, minmax(0, 1fr));
+    }
+
+}
+
+
+
+/* =========================================================
+   RESPONSIVE - MOBILE
+========================================================= */
+
+@media (max-width: 760px) {
+
+    .evidence-grid,
+    .evidence-grid-three,
+    .discussion-grid,
+    .project-showcase-grid,
+    .knowledge-grid,
+    .feedback-layout {
+        grid-template-columns: 1fr;
+    }
+
+
+    .evidence-card,
+    .discussion-card,
+    .project-showcase-card,
+    .feedback-card,
+    .knowledge-card {
+        padding: 23px;
+    }
+
+
+    .project-showcase-heading {
+        align-items: flex-start;
+    }
+
+
+    .evidence-card-top {
+        align-items: flex-start;
+        flex-direction: column;
+    }
+
+}
