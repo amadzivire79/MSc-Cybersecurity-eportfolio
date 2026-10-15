@@ -17,6 +17,31 @@
     >
 
     <link rel="stylesheet" href="../css/style.css">
+    <style>
+      /* Module 3 layout safety rules */
+      *, *::before, *::after { box-sizing: border-box; }
+      html, body { max-width: 100%; overflow-x: clip; }
+      .module-content-container, .module-hero-container,
+      .footer-container, .nav-container { min-width: 0; }
+      .module-content-container > *, .module-hero-container > * { min-width: 0; }
+      .unit-timeline, .evidence-grid, .knowledge-grid,
+      .outcome-grid, .professional-skill-grid, .action-grid {
+        min-width: 0;
+      }
+      .unit-card, .evidence-card, .knowledge-card, .outcome-card,
+      .professional-skill-card, .action-card {
+        min-width: 0; overflow-wrap: anywhere;
+      }
+      .module-page-nav { max-width: 100%; overflow-x: auto; }
+      .module-page-nav > div { width: max-content; min-width: 100%; }
+      @media (max-width: 900px) {
+        .unit-timeline, .evidence-grid, .knowledge-grid,
+        .outcome-grid, .professional-skill-grid, .action-grid {
+          display: grid; grid-template-columns: repeat(auto-fit, minmax(min(100%, 240px), 1fr));
+        }
+        .module-hero-container { display: grid; grid-template-columns: minmax(0, 1fr); }
+      }
+    </style>
 </head>
 
 
@@ -1077,9 +1102,7 @@
                     target="_blank"
                     rel="noopener noreferrer"
                     class="evidence-button"
-               
-                </a>
-                <  
+                >
                     View Discussion Evidence →
                 </a>
 
