@@ -4,7 +4,7 @@
 <meta charset="UTF-8"><meta name="viewport" content="width=device-width,initial-scale=1">
 <meta name="description" content="Module 2 Network Security MSc Cybersecurity e-portfolio with activities, assignments, discussions, projects and tutor feedback.">
 <title>Network Security | MSc Cybersecurity E-Portfolio</title>
-<link rel="stylesheet" href="../css/style.css">
+<!-- Self-contained Module 2 styling: avoids conflicting rules from the shared stylesheet. -->
 <style>
 :root{--navy:#102a43;--blue:#1769aa;--green:#16836a;--light:#f2f6fb;--text:#263746;--border:#dae4ee}
 *,*::before,*::after{box-sizing:border-box}
@@ -20,12 +20,12 @@ h1{font-size:clamp(2rem,5vw,3.2rem);line-height:1.15;margin:12px 0;color:white}.
 .module-page-nav>div{max-width:1150px;margin:auto;display:flex;gap:4px;padding:10px 16px;min-width:max-content}
 .module-page-nav a{color:#183d5c;text-decoration:none;font-weight:700;font-size:.82rem;padding:9px 11px;border-radius:7px;white-space:nowrap}
 .module-page-nav a:hover,.module-page-nav a:focus{background:#e2edf8}
-.module-content-container{max-width:1150px;margin:auto;padding:35px 22px 55px}
-.portfolio-section{scroll-margin-top:85px;background:white;border:1px solid var(--border);border-radius:13px;padding:32px;margin-bottom:25px;box-shadow:0 3px 14px #102a4309}
+.module-content-container{display:block!important;max-width:1150px;margin:auto;padding:35px 22px 55px}
+.portfolio-section{position:relative!important;display:block!important;float:none!important;clear:both!important;width:100%!important;max-width:100%!important;min-width:0!important;transform:none!important;left:auto!important;right:auto!important;top:auto!important;scroll-margin-top:85px;background:white;border:1px solid var(--border);border-radius:13px;padding:32px;margin-bottom:25px;box-shadow:0 3px 14px #102a4309}
 .section-heading{display:flex;align-items:center;gap:15px;border-bottom:1px solid var(--border);margin-bottom:20px;padding-bottom:15px}
 .section-number{background:#e5f4ef;color:var(--green);font-weight:800;padding:8px 12px;border-radius:8px}
 h2{font-size:1.5rem;color:var(--navy);line-height:1.3;margin:0}h3{color:var(--blue);font-size:1.08rem;line-height:1.4;margin:0 0 9px}
-.unit-grid,.evidence-grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(min(100%,295px),1fr));gap:17px;margin-top:20px}
+.unit-grid,.evidence-grid{position:static;display:grid;grid-template-columns:repeat(auto-fit,minmax(min(100%,295px),1fr));gap:17px;margin-top:20px}
 .unit-card,.evidence-card{border:1px solid var(--border);border-left:4px solid var(--blue);background:#f9fcff;border-radius:10px;padding:20px;min-width:0;overflow-wrap:anywhere}
 .unit-number{display:block;color:var(--green);font-size:.8rem;font-weight:800;letter-spacing:.08em;margin-bottom:8px}
 .evidence-card{display:flex;flex-direction:column}.evidence-card p{margin:0 0 13px}.evidence-actions{display:flex;gap:8px;flex-wrap:wrap;margin-top:auto}
