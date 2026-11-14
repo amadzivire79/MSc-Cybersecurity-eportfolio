@@ -1,705 +1,1524 @@
+
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en-GB">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta charset="UTF-8">
+  <meta name="viewport"
+        content="width=device-width, initial-scale=1.0">
 
-    <title>Launch into Computing | MSc Cybersecurity E-Portfolio</title>
+  <meta name="description"
+        content="Launch into Computing - MSc Cybersecurity
+        E-Portfolio, University of Essex Online">
 
-    <link rel="stylesheet" href="../css/style.css">
+  <title>
+    Launch into Computing | MSc Cybersecurity Portfolio
+  </title>
+
+  <link rel="stylesheet" href="../css/style.css">
+
+  <style>
+    :root {
+      --navy: #102a43;
+      --blue: #1769aa;
+      --green: #16836a;
+      --light: #f2f6fb;
+      --white: #ffffff;
+      --text: #263746;
+      --border: #dae4ee;
+    }
+
+    body {
+      margin: 0;
+      font-family: Arial, Helvetica, sans-serif;
+      line-height: 1.75;
+      color: var(--text);
+      background: var(--light);
+    }
+
+    .module-container {
+      max-width: 1100px;
+      margin: auto;
+      padding: 25px;
+    }
+
+    .module-hero {
+      background: linear-gradient(
+        120deg, #102a43, #1769aa
+      );
+      color: white;
+      padding: 55px 30px;
+      border-radius: 14px;
+      margin-bottom: 25px;
+    }
+
+    .module-hero h1 {
+      font-size: 2.4rem;
+      margin-bottom: 10px;
+      color: white;
+    }
+
+    .module-hero p {
+      color: #e7f1ff;
+    }
+
+    .module-nav {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 10px;
+      margin: 20px 0;
+    }
+
+    .module-nav a {
+      text-decoration: none;
+      background: #e2edf8;
+      color: #123b63;
+      padding: 9px 14px;
+      border-radius: 8px;
+      font-weight: bold;
+    }
+
+    .module-nav a:hover {
+      background: #1769aa;
+      color: white;
+    }
+
+    .portfolio-section {
+      background: white;
+      padding: 28px;
+      border-radius: 12px;
+      margin-bottom: 24px;
+      box-shadow: 0 3px 12px rgba(0,0,0,.06);
+    }
+
+    .portfolio-section h2 {
+      color: var(--navy);
+      border-bottom: 3px solid var(--green);
+      padding-bottom: 10px;
+    }
+
+    .portfolio-section h3 {
+      color: var(--blue);
+    }
+
+    .unit-grid {
+      display: grid;
+      grid-template-columns:
+        repeat(auto-fit, minmax(280px, 1fr));
+      gap: 18px;
+    }
+
+    .unit-card {
+      background: #f8fbff;
+      border: 1px solid var(--border);
+      border-left: 5px solid var(--blue);
+      border-radius: 10px;
+      padding: 20px;
+    }
+
+    .unit-card h3 {
+      margin-top: 0;
+    }
+
+    .unit-number {
+      color: var(--green);
+      font-size: .85rem;
+      font-weight: bold;
+      text-transform: uppercase;
+    }
+
+    .artefact {
+      background: #eff7f5;
+      border-left: 4px solid var(--green);
+      padding: 15px;
+      margin: 15px 0;
+      border-radius: 6px;
+    }
+
+    .feedback {
+      background: #fff8e8;
+      border-left: 4px solid #d69826;
+      padding: 16px;
+      margin: 15px 0;
+      border-radius: 6px;
+    }
+
+    .reflection {
+      background: #edf4ff;
+      border-left: 4px solid var(--blue);
+      padding: 16px;
+      margin: 15px 0;
+      border-radius: 6px;
+    }
+
+    .evidence-link {
+      display: inline-block;
+      background: var(--blue);
+      color: white;
+      text-decoration: none;
+      padding: 8px 14px;
+      border-radius: 6px;
+      margin: 5px 5px 5px 0;
+    }
+
+    .evidence-link:hover {
+      background: var(--navy);
+    }
+
+    .portfolio-table {
+      width: 100%;
+      border-collapse: collapse;
+    }
+
+    .portfolio-table th,
+    .portfolio-table td {
+      border: 1px solid var(--border);
+      padding: 12px;
+      text-align: left;
+      vertical-align: top;
+    }
+
+    .portfolio-table th {
+      background: var(--navy);
+      color: white;
+    }
+
+    .table-scroll {
+      overflow-x: auto;
+    }
+
+    .placeholder {
+      color: #8a5600;
+      font-style: italic;
+    }
+
+    .footer-navigation {
+      text-align: center;
+      padding: 25px;
+    }
+
+    @media(max-width: 600px) {
+      .module-container {
+        padding: 12px;
+      }
+
+      .module-hero {
+        padding: 30px 20px;
+      }
+
+      .module-hero h1 {
+        font-size: 1.8rem;
+      }
+
+      .portfolio-section {
+        padding: 18px;
+      }
+    }
+  </style>
 </head>
 
 <body>
 
-<!-- ================= HEADER ================= -->
+<main class="module-container">
+
+  <!-- MODULE HEADER -->
+
+  <header class="module-hero">
+
+    <p>MSc Cybersecurity | University of Essex Online</p>
+
+    <h1>Module 1: Launch into Computing</h1>
+
+    <p>
+      Academic E-Portfolio:
+      Learning Activities, Practical Artefacts,
+      Assessment Evidence, Tutor Feedback
+      and Critical Reflection
+    </p>
+
+    <p>
+      Student: Abinel Madzivire
+    </p>
+
+  </header>
+
+  <!-- NAVIGATION -->
+
+  <nav class="module-nav" aria-label="Module sections">
+    <a href="../index.html">Home</a>
+    <a href="#overview">Overview</a>
+    <a href="#outcomes">Learning Outcomes</a>
+    <a href="#units">Units 1-12</a>
+    <a href="#artefacts">Artefacts</a>
+    <a href="#assessment">Assessment</a>
+    <a href="#feedback">Tutor Feedback</a>
+    <a href="#reflection">Reflection</a>
+    <a href="#skills">Skills</a>
+    <a href="#action-plan">Action Plan</a>
+  </nav>
+
+  <!-- MODULE OVERVIEW -->
+
+  <section id="overview" class="portfolio-section">
+
+    <h2>1. Module Overview</h2>
+
+    <p>
+      Launch into Computing introduces the
+      theoretical, practical and professional
+      foundations of contemporary computing.
+      The module examines the relationship
+      between computational principles,
+      software engineering, data science,
+      artificial intelligence, cybersecurity
+      and enterprise information technology.
+    </p>
 
-<header class="site-header">
+    <p>
+      The module also addresses the legal,
+      ethical and professional responsibilities
+      associated with computing, including
+      data protection, digital inclusion,
+      secure systems and responsible
+      technological innovation.
+    </p>
 
-    <div class="nav-container">
+    <p>
+      This portfolio organises the module's
+      learning activities and identifies
+      opportunities to demonstrate
+      technical competence, critical analysis
+      and reflective professional development.
+    </p>
 
-        <a href="../index.html" class="brand">
+  </section>
 
-            <div class="brand-icon">🔐</div>
+  <!-- LEARNING OUTCOMES -->
 
-            <div class="brand-text">
-                <span class="brand-main">
-                    MSc <strong>CYBERSECURITY</strong>
-                </span>
+  <section id="outcomes" class="portfolio-section">
 
-                <span class="brand-subtitle">
-                    E-PORTFOLIO
-                </span>
-            </div>
+    <h2>2. Learning Outcomes</h2>
 
-        </a>
+    <p>
+      The following capabilities are drawn
+      together from the unit-level outcomes.
+    </p>
 
-        <nav class="main-nav">
+    <ul>
+      <li>
+        Analyse computing challenges
+        and processes in business systems.
+      </li>
 
-            <a href="../index.html">
-                Home
-            </a>
+      <li>
+        Apply computational logic,
+        Boolean algebra, algorithms
+        and data structures.
+      </li>
 
-            <a href="../about.html">
-                About Me
-            </a>
+      <li>
+        Evaluate software engineering
+        principles and development approaches.
+      </li>
 
-            <a href="../index.html#modules" class="active">
-                Modules
-            </a>
+      <li>
+        Investigate data science,
+        AI and enterprise storage systems.
+      </li>
 
-            <a href="../index.html#skills">
-                Skills
-            </a>
+      <li>
+        Assess cybersecurity threats,
+        risk management and resilience.
+      </li>
 
-            <a href="../index.html#development">
-                Professional Development
-            </a>
+      <li>
+        Critically evaluate IT governance
+        frameworks and strategic alignment.
+      </li>
 
-        </nav>
+      <li>
+        Explain legal, ethical, social
+        and professional responsibilities.
+      </li>
 
-    </div>
+      <li>
+        Evaluate emerging computing
+        technologies and future trends.
+      </li>
+    </ul>
 
-</header>
+  </section>
 
+  <!-- UNIT-BY-UNIT PORTFOLIO -->
 
-<main>
+  <section id="units" class="portfolio-section">
 
-<!-- ================= MODULE HERO ================= -->
+    <h2>3. Unit-by-Unit Learning Portfolio</h2>
 
-<section class="module-hero">
+    <p>
+      Each unit identifies the principal
+      areas of learning, the activity
+      specified in the module materials
+      and suitable evidence for inclusion.
+    </p>
 
-    <div class="module-hero-container">
+    <div class="unit-grid">
 
-        <div>
+      <!-- UNIT 1 -->
 
-            <div class="module-meta">
+      <article class="unit-card">
 
-                <span class="module-hero-number">
-                    MODULE 1
-                </span>
+        <span class="unit-number">Unit 1</span>
 
-                <span class="status completed">
-                    ✓ Completed
-                </span>
-
-            </div>
-
-            <h1>
-                Launch into Computing
-            </h1>
-
-            <p class="module-subtitle">
-                MSc Cybersecurity
-            </p>
-
-            <p class="module-hero-description">
-                A reflective record of my learning, practical activities,
-                technical artefacts, feedback and professional development
-                throughout the Launch into Computing module.
-            </p>
-
-        </div>
-
-
-        <aside class="module-summary-card">
-
-            <p class="summary-label">
-                STUDENT
-            </p>
-
-            <h3>
-                Abinel Madzivire
-            </h3>
-
-            <div class="summary-divider"></div>
-
-            <p class="summary-label">
-                PROGRAMME
-            </p>
-
-            <p>
-                MSc Cybersecurity
-            </p>
-
-            <p class="summary-label summary-space">
-                INSTITUTION
-            </p>
-
-            <p>
-                University of Essex
-            </p>
-
-        </aside>
-
-    </div>
-
-</section>
-
-
-<!-- ================= MODULE NAVIGATION ================= -->
-
-<nav class="module-page-nav">
-
-    <div>
-
-        <a href="#overview">Overview</a>
-        <a href="#outcomes">Learning Outcomes</a>
-        <a href="#artefacts">Artefacts</a>
-        <a href="#feedback">Feedback</a>
-        <a href="#reflection">Reflection</a>
-        <a href="#skills">Professional Skills</a>
-        <a href="#action-plan">Action Plan</a>
-
-    </div>
-
-</nav>
-
-
-<!-- ================= OVERVIEW ================= -->
-
-<section class="module-content-section" id="overview">
-
-    <div class="module-content-container">
-
-        <div class="section-number">
-            01
-        </div>
-
-        <div>
-
-            <p class="section-label">
-                Module Overview
-            </p>
-
-            <h2>
-                Introduction
-            </h2>
-
-            <p>
-                Launch into Computing provides a foundation for postgraduate
-                study in computing and cybersecurity. The module develops
-                understanding of fundamental computing concepts while
-                strengthening analytical thinking, problem-solving,
-                technical investigation and professional digital practice.
-            </p>
-
-            <p>
-                This section of my e-portfolio records my development
-                throughout the module and provides evidence of how academic
-                learning and practical activities contributed to my
-                cybersecurity knowledge and professional development.
-            </p>
-
-        </div>
-
-    </div>
-
-</section>
-
-
-<!-- ================= LEARNING OUTCOMES ================= -->
-
-<section class="module-content-section alternate" id="outcomes">
-
-    <div class="module-content-container">
-
-        <div class="section-number">
-            02
-        </div>
-
-        <div class="content-full">
-
-            <p class="section-label">
-                Academic Development
-            </p>
-
-            <h2>
-                Learning Outcomes
-            </h2>
-
-            <p class="section-intro">
-                The module contributed to the development of technical,
-                analytical and professional capabilities relevant to
-                postgraduate computing and cybersecurity study.
-            </p>
-
-
-            <div class="outcome-grid">
-
-                <div class="outcome-card">
-
-                    <span>01</span>
-
-                    <p>
-                        Develop an understanding of fundamental computing
-                        concepts and their application to real-world problems.
-                    </p>
-
-                </div>
-
-
-                <div class="outcome-card">
-
-                    <span>02</span>
-
-                    <p>
-                        Apply structured problem-solving and computational
-                        thinking to technical challenges.
-                    </p>
-
-                </div>
-
-
-                <div class="outcome-card">
-
-                    <span>03</span>
-
-                    <p>
-                        Develop practical technical and programming
-                        capabilities through applied activities.
-                    </p>
-
-                </div>
-
-
-                <div class="outcome-card">
-
-                    <span>04</span>
-
-                    <p>
-                        Critically reflect on learning and identify areas
-                        for continued professional development.
-                    </p>
-
-                </div>
-
-            </div>
-
-        </div>
-
-    </div>
-
-</section>
-
-
-<!-- ================= ARTEFACTS ================= -->
-
-<section class="module-content-section" id="artefacts">
-
-    <div class="module-content-container">
-
-        <div class="section-number">
-            03
-        </div>
-
-        <div class="content-full">
-
-            <p class="section-label">
-                Evidence of Learning
-            </p>
-
-            <h2>
-                Artefacts & Practical Work
-            </h2>
-
-            <p class="section-intro">
-                This section contains selected evidence demonstrating
-                my engagement with the module and application of learning.
-            </p>
-
-
-            <div class="artefact-grid">
-
-                <article class="artefact-card">
-
-                    <div class="artefact-icon">
-                        💻
-                    </div>
-
-                    <h3>
-                        Practical Exercises
-                    </h3>
-
-                    <p>
-                        Technical exercises demonstrating the application
-                        of computing concepts and problem-solving techniques.
-                    </p>
-
-                    <span class="artefact-tag">
-                        PRACTICAL WORK
-                    </span>
-
-                </article>
-
-
-                <article class="artefact-card">
-
-                    <div class="artefact-icon">
-                        📄
-                    </div>
-
-                    <h3>
-                        Academic Work
-                    </h3>
-
-                    <p>
-                        Selected academic activities demonstrating critical
-                        analysis, research and engagement with module concepts.
-                    </p>
-
-                    <span class="artefact-tag">
-                        ACADEMIC EVIDENCE
-                    </span>
-
-                </article>
-
-
-                <article class="artefact-card">
-
-                    <div class="artefact-icon">
-                        🔍
-                    </div>
-
-                    <h3>
-                        Technical Analysis
-                    </h3>
-
-                    <p>
-                        Evidence of technical investigation, interpretation
-                        and evaluation developed during the module.
-                    </p>
-
-                    <span class="artefact-tag">
-                        TECHNICAL SKILLS
-                    </span>
-
-                </article>
-
-            </div>
-
-        </div>
-
-    </div>
-
-</section>
-
-
-<!-- ================= FEEDBACK ================= -->
-
-<section class="module-content-section alternate" id="feedback">
-
-    <div class="module-content-container">
-
-        <div class="section-number">
-            04
-        </div>
-
-        <div>
-
-            <p class="section-label">
-                Development
-            </p>
-
-            <h2>
-                Feedback
-            </h2>
-
-            <div class="reflection-box">
-
-                <div class="reflection-icon">
-                    💬
-                </div>
-
-                <div>
-
-                    <h3>
-                        Feedback and Learning
-                    </h3>
-
-                    <p>
-                        Tutor and peer feedback provides an important basis
-                        for evaluating my academic and professional development.
-                        I use feedback to identify strengths, address areas
-                        requiring improvement and inform subsequent learning.
-                    </p>
-
-                    <p class="placeholder-note">
-                        Add specific tutor or peer feedback from this module here.
-                    </p>
-
-                </div>
-
-            </div>
-
-        </div>
-
-    </div>
-
-</section>
-
-
-<!-- ================= REFLECTION ================= -->
-
-<section class="module-content-section" id="reflection">
-
-    <div class="module-content-container">
-
-        <div class="section-number">
-            05
-        </div>
-
-        <div>
-
-            <p class="section-label">
-                Reflective Practice
-            </p>
-
-            <h2>
-                Reflection
-            </h2>
-
-            <p>
-                This module strengthened my understanding of the relationship
-                between fundamental computing knowledge and cybersecurity
-                practice. The practical activities encouraged me to move
-                beyond theoretical understanding and develop greater
-                confidence in applying technical concepts.
-            </p>
-
-            <p>
-                Reflection on my learning has also helped me identify areas
-                requiring further development. In particular, continued
-                practical work and independent study will be important in
-                strengthening my technical competence and applying computing
-                concepts within increasingly complex cybersecurity scenarios.
-            </p>
-
-        </div>
-
-    </div>
-
-</section>
-
-
-<!-- ================= PROFESSIONAL SKILLS ================= -->
-
-<section class="module-content-section alternate" id="skills">
-
-    <div class="module-content-container">
-
-        <div class="section-number">
-            06
-        </div>
-
-        <div class="content-full">
-
-            <p class="section-label">
-                Skills Development
-            </p>
-
-            <h2>
-                Professional Skills
-            </h2>
-
-
-            <div class="skill-development-grid">
-
-                <div class="skill-development-card">
-                    <strong>Problem Solving</strong>
-                    <div class="skill-bar">
-                        <div class="skill-level level-4"></div>
-                    </div>
-                </div>
-
-
-                <div class="skill-development-card">
-                    <strong>Technical Analysis</strong>
-                    <div class="skill-bar">
-                        <div class="skill-level level-4"></div>
-                    </div>
-                </div>
-
-
-                <div class="skill-development-card">
-                    <strong>Research</strong>
-                    <div class="skill-bar">
-                        <div class="skill-level level-3"></div>
-                    </div>
-                </div>
-
-
-                <div class="skill-development-card">
-                    <strong>Critical Thinking</strong>
-                    <div class="skill-bar">
-                        <div class="skill-level level-4"></div>
-                    </div>
-                </div>
-
-            </div>
-
-        </div>
-
-    </div>
-
-</section>
-
-
-<!-- ================= ACTION PLAN ================= -->
-
-<section class="module-content-section" id="action-plan">
-
-    <div class="module-content-container">
-
-        <div class="section-number">
-            07
-        </div>
-
-        <div class="content-full">
-
-            <p class="section-label">
-                Looking Forward
-            </p>
-
-            <h2>
-                Action Plan
-            </h2>
-
-
-            <div class="action-grid">
-
-                <div class="action-card">
-
-                    <span>01</span>
-
-                    <div>
-                        <h3>Strengthen Technical Practice</h3>
-
-                        <p>
-                            Continue completing practical computing and
-                            cybersecurity exercises to consolidate technical knowledge.
-                        </p>
-                    </div>
-
-                </div>
-
-
-                <div class="action-card">
-
-                    <span>02</span>
-
-                    <div>
-                        <h3>Develop Cybersecurity Knowledge</h3>
-
-                        <p>
-                            Apply foundational computing knowledge to network
-                            security, vulnerability assessment and risk management.
-                        </p>
-                    </div>
-
-                </div>
-
-
-                <div class="action-card">
-
-                    <span>03</span>
-
-                    <div>
-                        <h3>Maintain Reflective Practice</h3>
-
-                        <p>
-                            Continue documenting feedback, challenges and learning
-                            to support continuous professional development.
-                        </p>
-                    </div>
-
-                </div>
-
-            </div>
-
-        </div>
-
-    </div>
-
-</section>
-
-
-<!-- ================= MODULE NAVIGATION ================= -->
-
-<section class="module-bottom-navigation">
-
-    <div>
-
-        <a href="../index.html#modules" class="back-modules">
-            ← All Modules
-        </a>
-
-
-        <a href="module2.html" class="next-module">
-
-            <span>
-                NEXT MODULE
-            </span>
-
-            <strong>
-                Network Security →
-            </strong>
-
-        </a>
-
-    </div>
-
-</section>
-
-</main>
-
-
-<!-- ================= FOOTER ================= -->
-
-<footer class="site-footer">
-
-    <div class="footer-container">
-
-        <div>
-
-            <h3>
-                MSc Cybersecurity E-Portfolio
-            </h3>
-
-            <p>
-                Abinel Madzivire • University of Essex
-            </p>
-
-        </div>
-
-
-        <div class="footer-links">
-
-            <a href="../index.html">
-                Home
-            </a>
-
-            <a href="../about.html">
-                About
-            </a>
-
-            <a href="../index.html#modules">
-                Modules
-            </a>
-
-        </div>
-
-    </div>
-
-
-    <div class="footer-bottom">
+        <h3>What is Computing?</h3>
 
         <p>
-            MSc Cybersecurity E-Portfolio
+          Introduction to computing disciplines,
+          digital transformation, business
+          innovation and equality, diversity
+          and inclusion.
         </p>
+
+        <div class="artefact">
+          <strong>Artefacts:</strong>
+          AI-powered assistants case study,
+          introductory Python exercises,
+          GitHub registration evidence
+          and initial collaborative
+          discussion contribution.
+        </div>
+
+        <p>
+          <strong>Reflection focus:</strong>
+          The relationship between computing,
+          responsible innovation and
+          enterprise transformation.
+        </p>
+
+      </article>
+
+      <!-- UNIT 2 -->
+
+      <article class="unit-card">
+
+        <span class="unit-number">Unit 2</span>
+
+        <h3>Logical Foundations of Computing</h3>
+
+        <p>
+          Boolean algebra, truth tables,
+          logical gates and set theory,
+          including their use in circuits
+          and computational systems.
+        </p>
+
+        <div class="artefact">
+          <strong>Artefacts:</strong>
+          Boolean logic case study,
+          logic circuit design,
+          truth tables and collaborative
+          discussion contributions.
+        </div>
+
+        <p>
+          <strong>Reflection focus:</strong>
+          Applying mathematical reasoning
+          to logical decision-making
+          and system design.
+        </p>
+
+      </article>
+
+      <!-- UNIT 3 -->
+
+      <article class="unit-card">
+
+        <span class="unit-number">Unit 3</span>
+
+        <h3>Principles of Computer Science</h3>
+
+        <p>
+          Algorithms, searching, sorting,
+          data structures and computational
+          complexity.
+        </p>
+
+        <div class="artefact">
+          <strong>Artefact:</strong>
+          Algorithm Analysis and Implementation
+          activity, including program code
+          and analytical findings.
+        </div>
+
+        <p>
+          <strong>Reflection focus:</strong>
+          Comparing algorithm efficiency,
+          scalability and suitability
+          for computational problems.
+        </p>
+
+      </article>
+
+      <!-- UNIT 4 -->
+
+      <article class="unit-card">
+
+        <span class="unit-number">Unit 4</span>
+
+        <h3>Software Engineering</h3>
+
+        <p>
+          Software Development Life Cycle,
+          requirements, implementation,
+          testing, maintenance,
+          Waterfall, Agile and DevOps.
+        </p>
+
+        <div class="artefact">
+          <strong>Artefacts:</strong>
+          Comparative Analysis of Software
+          Development Methodologies and
+          collaborative discussion
+          summary contribution.
+        </div>
+
+        <p>
+          <strong>Reflection focus:</strong>
+          Selecting appropriate development
+          methodologies and considering
+          software quality and sustainability.
+        </p>
+
+      </article>
+
+      <!-- UNIT 5 -->
+
+      <article class="unit-card">
+
+        <span class="unit-number">Unit 5</span>
+
+        <h3>Data Science and Storage</h3>
+
+        <p>
+          Python data analytics,
+          statistical techniques,
+          SQL, NoSQL, cloud storage,
+          structured and unstructured data.
+        </p>
+
+        <div class="artefact">
+          <strong>Artefacts:</strong>
+          Data Science Techniques case study
+          and Data Analytics with Python
+          and Data Storage Reflection.
+        </div>
+
+        <p>
+          <strong>Reflection focus:</strong>
+          The importance of data quality,
+          storage selection,
+          data privacy and ethical analysis.
+        </p>
+
+      </article>
+
+      <!-- UNIT 6 -->
+
+      <article class="unit-card">
+
+        <span class="unit-number">Unit 6</span>
+
+        <h3>Principles of Artificial Intelligence I</h3>
+
+        <p>
+          Artificial intelligence,
+          machine learning, deep learning,
+          automation and predictive analytics.
+        </p>
+
+        <div class="artefact">
+          <strong>Artefact:</strong>
+          Implementing and Evaluating
+          a Simple AI Model.
+        </div>
+
+        <p>
+          <strong>Reflection focus:</strong>
+          AI model performance,
+          reliability, transparency
+          and potential algorithmic bias.
+        </p>
+
+      </article>
+
+      <!-- UNIT 7 -->
+
+      <article class="unit-card">
+
+        <span class="unit-number">Unit 7</span>
+
+        <h3>Principles of Artificial Intelligence II</h3>
+
+        <p>
+          Continued evaluation of AI
+          applications, technical risks,
+          enterprise opportunities
+          and responsible implementation.
+        </p>
+
+        <div class="artefact">
+          <strong>Artefacts:</strong>
+          Completion of the AI model activity
+          where required, and the
+          Security Risk Assessment Report.
+        </div>
+
+        <p>
+          <strong>Reflection focus:</strong>
+          Ethical and security implications
+          of implementing AI-supported
+          systems.
+        </p>
+
+      </article>
+
+      <!-- UNIT 8 -->
+
+      <article class="unit-card">
+
+        <span class="unit-number">Unit 8</span>
+
+        <h3>Principles of Cyber Security</h3>
+
+        <p>
+          Cyber threats, vulnerabilities,
+          threat modelling, encryption,
+          risk assessment and
+          security governance.
+        </p>
+
+        <div class="artefact">
+          <strong>Artefact:</strong>
+          Cybersecurity Threat Assessment
+          and Mitigation Plan.
+        </div>
+
+        <p>
+          <strong>Reflection focus:</strong>
+          Applying risk-based approaches
+          to protecting confidentiality,
+          integrity and availability.
+        </p>
+
+      </article>
+
+      <!-- UNIT 9 -->
+
+      <article class="unit-card">
+
+        <span class="unit-number">Unit 9</span>
+
+        <h3>Computing and Risk</h3>
+
+        <p>
+          Strategic IT governance,
+          enterprise architecture,
+          digital transformation,
+          COBIT, ITIL and TOGAF.
+        </p>
+
+        <div class="artefact">
+          <strong>Artefact:</strong>
+          Disaster Recovery Plan Development.
+        </div>
+
+        <p>
+          <strong>Reflection focus:</strong>
+          Aligning IT management,
+          organisational risk and
+          business continuity requirements.
+        </p>
+
+      </article>
+
+      <!-- UNIT 10 -->
+
+      <article class="unit-card">
+
+        <span class="unit-number">Unit 10</span>
+
+        <h3>Strategic and Enterprise IT Management</h3>
+
+        <p>
+          Operational IT governance,
+          risk management,
+          compliance, disaster recovery
+          and IT-business alignment.
+        </p>
+
+        <div class="artefact">
+          <strong>Artefacts:</strong>
+          Toyota Digital Transformation
+          case study discussion
+          and IT Governance Framework Analysis.
+        </div>
+
+        <p>
+          <strong>Reflection focus:</strong>
+          Translating enterprise
+          technology strategy into
+          operational controls.
+        </p>
+
+      </article>
+
+      <!-- UNIT 11 -->
+
+      <article class="unit-card">
+
+        <span class="unit-number">Unit 11</span>
+
+        <h3>Future-Proofing IT Systems</h3>
+
+        <p>
+          Organisational resilience,
+          socio-technical risks,
+          ethical governance,
+          regulatory obligations
+          and long-term risk management.
+        </p>
+
+        <div class="artefact">
+          <strong>Artefacts:</strong>
+          Developing a Resilient and Strategic
+          IT Framework and the Future Trends
+          blog post activity.
+        </div>
+
+        <p>
+          <strong>Reflection focus:</strong>
+          Integrating technical resilience,
+          responsible governance
+          and professional accountability.
+        </p>
+
+      </article>
+
+      <!-- UNIT 12 -->
+
+      <article class="unit-card">
+
+        <span class="unit-number">Unit 12</span>
+
+        <h3>Future Trends and Concepts in Computing</h3>
+
+        <p>
+          Quantum computing,
+          blockchain, artificial intelligence,
+          edge computing, cybersecurity
+          and sustainable innovation.
+        </p>
+
+        <div class="artefact">
+          <strong>Artefacts:</strong>
+          End-of-module Programming Exercise
+          and Presentation, together
+          with supporting source code
+          and presentation evidence.
+        </div>
+
+        <p>
+          <strong>Reflection focus:</strong>
+          Emerging opportunities,
+          technical challenges,
+          professional responsibilities
+          and future development priorities.
+        </p>
+
+      </article>
 
     </div>
 
-</footer>
+  </section>
+
+  <!-- ARTEFACT DIRECTORY -->
+
+  <section id="artefacts" class="portfolio-section">
+
+    <h2>4. Practical Artefacts and Evidence</h2>
+
+    <p>
+      This section will provide direct links
+      to completed practical activities,
+      written reports, Python scripts,
+      discussion contributions
+      and assessment submissions.
+    </p>
+
+    <p>
+      The artefacts listed below originate
+      from the module activity schedule.
+      Evidence links should be added only
+      after the relevant files have been
+      uploaded to the repository.
+    </p>
+
+    <div class="table-scroll">
+      <table class="portfolio-table">
+
+        <thead>
+          <tr>
+            <th>Unit</th>
+            <th>Artefact</th>
+            <th>Evidence</th>
+          </tr>
+        </thead>
+
+        <tbody>
+
+          <tr>
+            <td>1</td>
+            <td>
+              Python Exercises and
+              AI Assistants Case Study
+            </td>
+            <td>Evidence to add</td>
+          </tr>
+
+          <tr>
+            <td>2</td>
+            <td>
+              Boolean Logic and
+              Logic Circuit Design
+            </td>
+            <td>Evidence to add</td>
+          </tr>
+
+          <tr>
+            <td>3</td>
+            <td>
+              Algorithm Analysis
+              and Implementation
+            </td>
+            <td>Evidence to add</td>
+          </tr>
+
+          <tr>
+            <td>4</td>
+            <td>
+              Software Development
+              Methodologies Comparison
+            </td>
+            <td>Evidence to add</td>
+          </tr>
+
+          <tr>
+            <td>5</td>
+            <td>
+              Python Data Analytics
+              and Storage Reflection
+            </td>
+            <td>Evidence to add</td>
+          </tr>
+
+          <tr>
+            <td>6</td>
+            <td>
+              Simple AI Model
+            </td>
+            <td>Evidence to add</td>
+          </tr>
+
+          <tr>
+            <td>7</td>
+            <td>
+              Security Risk
+              Assessment Report
+            </td>
+            <td>Evidence to add</td>
+          </tr>
+
+          <tr>
+            <td>8</td>
+            <td>
+              Cybersecurity Threat
+              Assessment and Mitigation
+            </td>
+            <td>Evidence to add</td>
+          </tr>
+
+          <tr>
+            <td>9</td>
+            <td>
+              Disaster Recovery Plan
+            </td>
+            <td>Evidence to add</td>
+          </tr>
+
+          <tr>
+            <td>10</td>
+            <td>
+              IT Governance
+              Framework Analysis
+            </td>
+            <td>Evidence to add</td>
+          </tr>
+
+          <tr>
+            <td>11</td>
+            <td>
+              Resilient IT Framework
+              and Future Trends Blog
+            </td>
+            <td>Evidence to add</td>
+          </tr>
+
+          <tr>
+            <td>12</td>
+            <td>
+              Programming Exercise
+              and Presentation
+            </td>
+            <td>Evidence to add</td>
+          </tr>
+
+        </tbody>
+      </table>
+    </div>
+
+    <h3>Adding an Artefact Link</h3>
+
+    <p>
+      When an artefact has been uploaded,
+      replace its "Evidence to add" text
+      with an HTML link to the actual file.
+    </p>
+
+    <p class="placeholder">
+      Example only: replace the example
+      file path with your real repository path.
+    </p>
+
+    <pre><code>&lt;a href="../artefacts/module1/algorithm-analysis.pdf"
+target="_blank" rel="noopener"&gt;
+View Algorithm Analysis
+&lt;/a&gt;</code></pre>
+
+  </section>
+
+  <!-- ASSESSMENT -->
+
+  <section id="assessment" class="portfolio-section">
+
+    <h2>5. Summative Assessment Evidence</h2>
+
+    <h3>
+      Assessment 1: Collaborative Learning Discussion
+    </h3>
+
+    <p><strong>Weighting: 20%</strong></p>
+
+    <p>
+      The collaborative learning discussion
+      spans Units 1 to 4, with a minimum
+      requirement of four posts.
+      It includes an initial contribution,
+      ongoing discussion and a concluding
+      summary contribution.
+    </p>
+
+    <div class="artefact">
+
+      <strong>Evidence to include:</strong>
+
+      <ul>
+        <li>Initial discussion post</li>
+        <li>Contributions to peer discussions</li>
+        <li>Summary post</li>
+        <li>Peer responses and engagement</li>
+        <li>Tutor feedback and assessment result</li>
+      </ul>
+
+      <p class="placeholder">
+        Add actual discussion posts,
+        dates and submission evidence here.
+      </p>
+
+    </div>
+
+    <h3>
+      Assessment 2: Programming Exercise
+      and Presentation
+    </h3>
+
+    <p><strong>Weighting: 80%</strong></p>
+
+    <p>
+      The end-of-module assessment
+      comprises a programming exercise
+      and presentation. The full
+      assessment brief should be consulted
+      for its specific technical,
+      submission and presentation requirements.
+    </p>
+
+    <div class="artefact">
+
+      <strong>Evidence to include:</strong>
+
+      <ul>
+        <li>Final program source code</li>
+        <li>Program screenshots or demonstration</li>
+        <li>Testing evidence</li>
+        <li>Presentation slides</li>
+        <li>Assessment feedback</li>
+        <li>Final assessment result</li>
+      </ul>
+
+      <p class="placeholder">
+        Insert the actual project title,
+        program description,
+        assessment evidence and result.
+      </p>
+
+    </div>
+
+  </section>
+
+  <!-- TUTOR FEEDBACK -->
+
+  <section id="feedback" class="portfolio-section">
+
+    <h2>6. Tutor and Peer Feedback</h2>
+
+    <p>
+      Tutor and peer feedback provide
+      opportunities to evaluate academic
+      performance, identify areas for
+      development and demonstrate
+      how feedback informs improvement.
+    </p>
+
+    <div class="feedback">
+
+      <h3>
+        6.1 Collaborative Discussion Feedback
+      </h3>
+
+      <p>
+        <strong>Actual tutor comment:</strong>
+      </p>
+
+      <p class="placeholder">
+        Insert the tutor's original
+        feedback here.
+      </p>
+
+      <p>
+        <strong>My critical response:</strong>
+      </p>
+
+      <p class="placeholder">
+        Explain what the feedback reveals
+        about your critical analysis,
+        academic writing, referencing
+        and contribution to discussions.
+      </p>
+
+      <p>
+        <strong>Action taken:</strong>
+      </p>
+
+      <p class="placeholder">
+        Describe specific improvements
+        made in response to the feedback.
+      </p>
+
+    </div>
+
+    <div class="feedback">
+
+      <h3>
+        6.2 Programming Exercise Feedback
+      </h3>
+
+      <p>
+        <strong>Actual tutor comment:</strong>
+      </p>
+
+      <p class="placeholder">
+        Insert the feedback from
+        the final programming exercise
+        and presentation.
+      </p>
+
+      <p>
+        <strong>My critical response:</strong>
+      </p>
+
+      <p class="placeholder">
+        Evaluate strengths and weaknesses
+        identified in the implementation,
+        testing, documentation,
+        presentation and problem-solving.
+      </p>
+
+      <p>
+        <strong>Action taken:</strong>
+      </p>
+
+      <p class="placeholder">
+        Explain how the feedback influenced
+        later programming and cybersecurity work.
+      </p>
+
+    </div>
+
+    <div class="feedback">
+
+      <h3>6.3 Peer Feedback and Collaboration</h3>
+
+      <p class="placeholder">
+        Insert relevant peer responses
+        from the collaborative discussion,
+        followed by your evaluation
+        of their contribution to learning.
+      </p>
+
+    </div>
+
+    <h3>Feedback Improvement Record</h3>
+
+    <div class="table-scroll">
+      <table class="portfolio-table">
+
+        <thead>
+          <tr>
+            <th>Source</th>
+            <th>Feedback</th>
+            <th>Improvement Action</th>
+          </tr>
+        </thead>
+
+        <tbody>
+
+          <tr>
+            <td>Discussion tutor</td>
+            <td>Awaiting actual feedback</td>
+            <td>To be documented</td>
+          </tr>
+
+          <tr>
+            <td>Programming tutor</td>
+            <td>Awaiting actual feedback</td>
+            <td>To be documented</td>
+          </tr>
+
+          <tr>
+            <td>Peer contributions</td>
+            <td>Evidence to add</td>
+            <td>To be documented</td>
+          </tr>
+
+        </tbody>
+
+      </table>
+    </div>
+
+  </section>
+
+  <!-- CRITICAL REFLECTION -->
+
+  <section id="reflection" class="portfolio-section">
+
+    <h2>7. Critical Reflection on Learning</h2>
+
+    <p>
+      This section provides a reflective
+      framework for evaluating development
+      throughout Launch into Computing.
+      It should be personalised using
+      completed activities, specific
+      challenges and actual tutor feedback.
+    </p>
+
+    <div class="reflection">
+
+      <h3>
+        7.1 Developing Computational Thinking
+      </h3>
+
+      <p>
+        The early units introduced mathematical
+        and logical principles that underpin
+        software development and computational
+        problem-solving. Boolean logic,
+        algorithms and data structures provide
+        useful foundations for designing
+        efficient systems and understanding
+        the behaviour of computing processes.
+      </p>
+
+      <p class="placeholder">
+        Personalise this section by explaining
+        which specific exercises challenged
+        you, how you addressed them and
+        what evidence demonstrates progress.
+      </p>
+
+    </div>
+
+    <div class="reflection">
+
+      <h3>
+        7.2 Programming and Software Engineering
+      </h3>
+
+      <p>
+        Python programming and software
+        engineering activities offer
+        opportunities to move from
+        theoretical understanding to
+        practical implementation. Evaluating
+        software development methodologies
+        also illustrates the importance
+        of requirements, testing,
+        documentation and maintainability.
+      </p>
+
+      <p class="placeholder">
+        Include actual programming examples,
+        errors encountered, debugging
+        strategies and lessons learnt.
+      </p>
+
+    </div>
+
+    <div class="reflection">
+
+      <h3>
+        7.3 Data Science and Artificial Intelligence
+      </h3>
+
+      <p>
+        Data science and AI activities
+        introduce the relationship between
+        data quality, computational models
+        and decision-making. They also raise
+        important concerns about bias,
+        privacy, accuracy and responsible
+        technological implementation.
+      </p>
+
+      <p class="placeholder">
+        Add findings from your Python
+        analytics exercise and AI model,
+        including their limitations
+        and potential improvements.
+      </p>
+
+    </div>
+
+    <div class="reflection">
+
+      <h3>
+        7.4 Cybersecurity and Risk Management
+      </h3>
+
+      <p>
+        Cybersecurity, disaster recovery
+        and risk management activities
+        connect computing knowledge
+        to the protection and resilience
+        of organisational systems.
+        They also demonstrate why
+        technical safeguards must be
+        supported by governance,
+        business continuity planning
+        and ethical decision-making.
+      </p>
+
+      <p class="placeholder">
+        Insert examples from your security
+        assessment and disaster recovery work.
+        Explain how these changed your
+        approach to evaluating risk.
+      </p>
+
+    </div>
+
+    <div class="reflection">
+
+      <h3>
+        7.5 Enterprise Governance and Future Trends
+      </h3>
+
+      <p>
+        Enterprise governance frameworks
+        highlight the importance of aligning
+        IT decisions with strategic objectives.
+        Emerging technologies further
+        demonstrate the need for continuous
+        professional development and
+        critical evaluation of innovation.
+      </p>
+
+      <p class="placeholder">
+        Relate your completed governance
+        and future trends activities
+        to professional goals and
+        developing cybersecurity interests.
+      </p>
+
+    </div>
+
+    <div class="reflection">
+
+      <h3>
+        7.6 Overall Reflective Evaluation
+      </h3>
+
+      <p class="placeholder">
+        Complete this section with a
+        personal critical reflection covering:
+      </p>
+
+      <ul>
+        <li>Initial knowledge and expectations</li>
+        <li>Most significant learning achievements</li>
+        <li>Challenges and how they were addressed</li>
+        <li>Evidence of technical development</li>
+        <li>How tutor feedback was applied</li>
+        <li>Areas requiring further improvement</li>
+        <li>Transfer of learning to later MSc modules</li>
+      </ul>
+
+    </div>
+
+  </section>
+
+  <!-- PROFESSIONAL SKILLS -->
+
+  <section id="skills" class="portfolio-section">
+
+    <h2>8. Professional Skills Development</h2>
+
+    <p>
+      The following matrix connects
+      learning activities to the
+      professional capabilities they
+      are intended to develop.
+    </p>
+
+    <div class="table-scroll">
+      <table class="portfolio-table">
+
+        <thead>
+          <tr>
+            <th>Skill</th>
+            <th>Relevant Units</th>
+            <th>Evidence to Provide</th>
+          </tr>
+        </thead>
+
+        <tbody>
+
+          <tr>
+            <td>Python Programming</td>
+            <td>1, 3, 5, 6, 12</td>
+            <td>Scripts and testing results</td>
+          </tr>
+
+          <tr>
+            <td>Logical Problem-Solving</td>
+            <td>2, 3</td>
+            <td>Truth tables and algorithms</td>
+          </tr>
+
+          <tr>
+            <td>Software Engineering</td>
+            <td>4</td>
+            <td>Methodology comparison</td>
+          </tr>
+
+          <tr>
+            <td>Data Analytics</td>
+            <td>5</td>
+            <td>Python analysis outputs</td>
+          </tr>
+
+          <tr>
+            <td>AI Evaluation</td>
+            <td>6, 7</td>
+            <td>Model and evaluation report</td>
+          </tr>
+
+          <tr>
+            <td>Security Risk Analysis</td>
+            <td>7, 8, 9</td>
+            <td>Risk and recovery reports</td>
+          </tr>
+
+          <tr>
+            <td>IT Governance</td>
+            <td>9, 10, 11</td>
+            <td>Governance framework analysis</td>
+          </tr>
+
+          <tr>
+            <td>Academic Communication</td>
+            <td>1-4, 12</td>
+            <td>Discussion and presentation</td>
+          </tr>
+
+          <tr>
+            <td>Ethical and Professional Judgement</td>
+            <td>1, 5-12</td>
+            <td>Case studies and reflections</td>
+          </tr>
+
+        </tbody>
+
+      </table>
+    </div>
+
+  </section>
+
+  <!-- ACTION PLAN -->
+
+  <section id="action-plan" class="portfolio-section">
+
+    <h2>9. Continuing Professional Development</h2>
+
+    <p>
+      The proposed action plan translates
+      module learning into priorities
+      for subsequent MSc Cybersecurity study.
+      Progress should be reviewed
+      against evidence of completed work.
+    </p>
+
+    <div class="table-scroll">
+      <table class="portfolio-table">
+
+        <thead>
+          <tr>
+            <th>Development Priority</th>
+            <th>Proposed Action</th>
+            <th>Evidence of Progress</th>
+          </tr>
+        </thead>
+
+        <tbody>
+
+          <tr>
+            <td>Programming</td>
+            <td>
+              Practise Python and
+              object-oriented programming.
+            </td>
+            <td>
+              Tested code and documented projects
+            </td>
+          </tr>
+
+          <tr>
+            <td>Secure Coding</td>
+            <td>
+              Apply validation, testing
+              and security principles.
+            </td>
+            <td>
+              Secure programming exercises
+            </td>
+          </tr>
+
+          <tr>
+            <td>Cybersecurity</td>
+            <td>
+              Develop practical vulnerability
+              and risk assessment skills.
+            </td>
+            <td>
+              Technical risk reports
+            </td>
+          </tr>
+
+          <tr>
+            <td>Academic Writing</td>
+            <td>
+              Strengthen critical evaluation
+              and Harvard referencing.
+            </td>
+            <td>
+              Revised academic submissions
+            </td>
+          </tr>
+
+          <tr>
+            <td>Professional Reflection</td>
+            <td>
+              Document feedback,
+              challenges and learning.
+            </td>
+            <td>
+              Updated e-portfolio reflections
+            </td>
+          </tr>
+
+        </tbody>
+
+      </table>
+    </div>
+
+  </section>
+
+  <!-- CONCLUSION -->
+
+  <section class="portfolio-section">
+
+    <h2>10. Module Conclusion</h2>
+
+    <p>
+      Launch into Computing establishes
+      an interdisciplinary foundation
+      linking programming, computing theory,
+      data science, artificial intelligence,
+      cybersecurity and enterprise governance.
+    </p>
+
+    <p>
+      The completed version of this portfolio
+      will connect these areas of study
+      with practical artefacts, assessed
+      work, authentic tutor feedback
+      and evidence-based critical reflection.
+      This will support a clearer account
+      of academic progression and
+      professional development
+      throughout the MSc Cybersecurity programme.
+    </p>
+
+  </section>
+
+  <!-- FOOTER NAVIGATION -->
+
+  <footer class="footer-navigation">
+
+    <p>
+      MSc Cybersecurity E-Portfolio
+    </p>
+
+    <p>
+      University of Essex Online
+    </p>
+
+    <a class="evidence-link" href="../index.html">
+      Return to Portfolio Homepage
+    </a>
+
+  </footer>
+
+</main>
 
 </body>
 </html>
